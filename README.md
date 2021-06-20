@@ -22,7 +22,7 @@ This project includes two modules:
 ### Running Environment
 
 #### satc_front
-Need to install node.js，you can run `npm run start`, also can run JS in docker.
+If you have installed node.js，you can run `npm run start` in directory satc_front/jsparse. Otherwise, can run node.js and parser in docker.
     
     > docker build . -t jsparse
 
