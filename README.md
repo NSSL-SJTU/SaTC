@@ -3,7 +3,7 @@ A prototype of Shared-keywords aware Taint Checking, a novel static analysis app
 
 ## Overview of SaTC
 
-<img src="./SaTC-arch.png" width="60%">
+<img src="SaTC-arch.png" width="60%">
 
 ## Research paper
 
