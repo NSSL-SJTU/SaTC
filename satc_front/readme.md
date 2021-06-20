@@ -1,4 +1,4 @@
-## SATC
+## SaTC
 
 Program Home:
 
