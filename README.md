@@ -26,7 +26,7 @@ A prototype of Shared-keywords aware Taint Checking, a novel static analysis app
 
 
 #### satc_TaintCheck
-**暂时无法脱离docker环境运行, 需要从dockerhub上拉取镜像**
+**目前需要从dockerhub上拉取依赖环境的镜像**
 > docker pull cpegg/satc:1.2.0
 
 运行方法:
