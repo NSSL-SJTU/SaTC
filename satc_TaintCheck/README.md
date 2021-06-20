@@ -1,6 +1,6 @@
 # satc-TaintCheck
 
-SaTC-TaintCheck is the taint engine of SaTC which can detect multi-binary vulnerabilities in embedded firmware.
+SaTC-TaintCheck is the taint engine of SaTC which can detect vulnerabilities in embedded firmware.
 
 ## Overview of SaTC
 
