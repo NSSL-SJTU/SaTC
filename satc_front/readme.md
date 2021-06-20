@@ -33,7 +33,7 @@ optional arguments:
 
 ## 环境依赖
 
-需要下载ghidra框加到当前路径下
+需要下载ghidra源代码框架到当前路径下，并且重命名为ghidra文件夹
 
 ## 运行程序:
 
