@@ -47,7 +47,7 @@ To  run Firm-TaintCheck, from the repo root directory, just run
 
 ## Docker
 A dockerized version of Firm-TaintCheck ready to use can be found.
+https://hub.docker.com/repository/docker/cpegg/satc
 
 ## Dataset
-To obtain the dataset used in the paper please send an email to @sjtu
-
+To obtain the dataset used in the paper please send an email to bob777@sjtu and cpeggsjtu@sjtu.
