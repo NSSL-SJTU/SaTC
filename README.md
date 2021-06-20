@@ -43,4 +43,4 @@ Example：
 > time python tool/main.py test/R7000P-V1.3.0.8/httpd test/R7000P-V1.3.0.8/httpd_ref2sink_bof.result
 
 Description of Commands :
-https://github.com/NSSL-SJTU/SaTC/tree/main/satc_TaintCheck#readme
+[satc_TaintCheck/readme.md](satc_TaintCheck/readme.md)
