@@ -2,17 +2,6 @@
 
 SaTC-TaintCheck is the taint engine of SaTC which can detect vulnerabilities in embedded firmware.
 
-## Overview of SaTC
-
-<img src="SaTC-arch.png" width="60%">
-
-## Research paper
-
-We present our approach and the findings of this work in the following research paper:
-
-**Sharing More and Checking Less: Leveraging Common Input Keywords to Detect Bugs in Embedded Systems** 
-[[PDF]](https://www.usenix.org/system/files/sec21fall-chen-libo.pdf)  
-
 ## Repository Structure
 
 There are four main directories:
