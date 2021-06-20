@@ -1,6 +1,6 @@
-# Firm-TaintCheck
+# satc-TaintCheck
 
-Firm-TaintCheck is a prototype of SaTC which can detect multi-binary vulnerabilities in embedded firmware.
+SaTC-TaintCheck is the taint checking engine of SaTC which can detect multi-binary vulnerabilities in embedded firmware.
 
 ## Overview
 
