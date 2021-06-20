@@ -26,5 +26,5 @@ Description of Commands :
 Command:
 > time python tool/main.py \<path to binary> \<path to ghidra result>
 
-example：
+Example：
 > time python tool/main.py test/R7000P-V1.3.0.8/httpd test/R7000P-V1.3.0.8/httpd_ref2sink_bof.result
