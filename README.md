@@ -7,8 +7,8 @@ A prototype of Shared-keywords aware Taint Checking, a novel static analysis app
 ## 临时代码结构使用与说明
 
 ### 目录说明
-- satc_front : 关键字提取代码
-- satc_TaintCheck : 符号执行分析代码
+- satc_front : 前端提取模块
+- satc_TaintCheck : 污点分析引擎
 
 ### 运行环境准备
 
