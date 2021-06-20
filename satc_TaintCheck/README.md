@@ -4,7 +4,7 @@ Firm-TaintCheck is a prototype of SaTC which can detect multi-binary vulnerabili
 
 ## Overview
 
-<img src="overview.png" width="60%">
+<img src="SaTC-arch.png" width="60%">
 
 ## Research paper
 
