@@ -1,4 +1,4 @@
-# satc-TaintCheck
+# SaTC-TaintCheck
 
 SaTC-TaintCheck is the taint engine of SaTC which can detect vulnerabilities in embedded firmware.
 
