@@ -36,6 +36,7 @@ optional arguments:
 
 1. 运行前先进入jsparse目录运行 `npm run start` ,或者使用docker运行
 > docker build . -t jsparse
+
 > docker run -itd 3000:3000 jsparse
 
 2. 运行程序即可
