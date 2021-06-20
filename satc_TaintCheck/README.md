@@ -10,8 +10,8 @@ SaTC-TaintCheck is the taint engine of SaTC which can detect multi-binary vulner
 
 We present our approach and the findings of this work in the following research paper:
 
-**SaTC: Semantic-aware Taint Checking for Detecting Bugs in Embedded Systems** 
-[[PDF]](https://www.badnack.it/static/papers/University/karonte.pdf)  
+**Sharing More and Checking Less: Leveraging Common Input Keywords to Detect Bugs in Embedded Systems** 
+[[PDF]](https://www.usenix.org/system/files/sec21fall-chen-libo.pdf)  
 
 ## Repository Structure
 
