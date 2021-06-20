@@ -1,10 +1,7 @@
 # SaTC
 A prototype of Shared-keywords aware Taint Checking, a novel static analysis approach that tracks the data flow of the user input between front-end and back-end to precisely detect security vulnerabilities.
 
-
-完整代码环境正在整理中...
-
-## 临时代码结构使用与说明
+## 代码结构使用与说明
 
 ### 目录说明
 - satc_front : 前端提取模块
