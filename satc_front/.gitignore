@@ -1,0 +1,8 @@
+.idea/
+
+
+*/.DS_Store
+
+front_analysise/untils/logs
+
+__pycache__

@@ -1,0 +1,3049 @@
+<sleigh version="2" bigendian="false" align="1" uniqbase="0x860">
+<spaces defaultspace="ram">
+<space_other name="OTHER" index="1" bigendian="false" delay="0" size="8" physical="false"/>
+<space_unique name="unique" index="2" bigendian="false" delay="0" size="4" physical="true"/>
+<space name="ram" index="3" bigendian="false" delay="1" size="2" physical="true"/>
+<space name="io" index="4" bigendian="false" delay="1" size="1" physical="true"/>
+<space name="register" index="5" bigendian="false" delay="0" size="1" physical="true"/>
+</spaces>
+<symbol_table scopesize="60" symbolsize="133">
+<scope id="0x0" parent="0x0"/>
+<scope id="0x1" parent="0x0"/>
+<scope id="0x2" parent="0x0"/>
+<scope id="0x3" parent="0x0"/>
+<scope id="0x4" parent="0x0"/>
+<scope id="0x5" parent="0x0"/>
+<scope id="0x6" parent="0x0"/>
+<scope id="0x7" parent="0x0"/>
+<scope id="0x8" parent="0x0"/>
+<scope id="0x9" parent="0x0"/>
+<scope id="0xa" parent="0x0"/>
+<scope id="0xb" parent="0x0"/>
+<scope id="0xc" parent="0x0"/>
+<scope id="0xd" parent="0x0"/>
+<scope id="0xe" parent="0x0"/>
+<scope id="0xf" parent="0x0"/>
+<scope id="0x10" parent="0x0"/>
+<scope id="0x11" parent="0x0"/>
+<scope id="0x12" parent="0x0"/>
+<scope id="0x13" parent="0x0"/>
+<scope id="0x14" parent="0x0"/>
+<scope id="0x15" parent="0x0"/>
+<scope id="0x16" parent="0x0"/>
+<scope id="0x17" parent="0x0"/>
+<scope id="0x18" parent="0x0"/>
+<scope id="0x19" parent="0x0"/>
+<scope id="0x1a" parent="0x0"/>
+<scope id="0x1b" parent="0x0"/>
+<scope id="0x1c" parent="0x0"/>
+<scope id="0x1d" parent="0x0"/>
+<scope id="0x1e" parent="0x0"/>
+<scope id="0x1f" parent="0x0"/>
+<scope id="0x20" parent="0x0"/>
+<scope id="0x21" parent="0x0"/>
+<scope id="0x22" parent="0x0"/>
+<scope id="0x23" parent="0x0"/>
+<scope id="0x24" parent="0x0"/>
+<scope id="0x25" parent="0x0"/>
+<scope id="0x26" parent="0x0"/>
+<scope id="0x27" parent="0x0"/>
+<scope id="0x28" parent="0x0"/>
+<scope id="0x29" parent="0x0"/>
+<scope id="0x2a" parent="0x0"/>
+<scope id="0x2b" parent="0x0"/>
+<scope id="0x2c" parent="0x0"/>
+<scope id="0x2d" parent="0x0"/>
+<scope id="0x2e" parent="0x0"/>
+<scope id="0x2f" parent="0x0"/>
+<scope id="0x30" parent="0x0"/>
+<scope id="0x31" parent="0x0"/>
+<scope id="0x32" parent="0x0"/>
+<scope id="0x33" parent="0x0"/>
+<scope id="0x34" parent="0x0"/>
+<scope id="0x35" parent="0x0"/>
+<scope id="0x36" parent="0x0"/>
+<scope id="0x37" parent="0x0"/>
+<scope id="0x38" parent="0x0"/>
+<scope id="0x39" parent="0x0"/>
+<scope id="0x3a" parent="0x0"/>
+<scope id="0x3b" parent="0x0"/>
+<subtable_sym_head name="instruction" id="0x0" scope="0x0"/>
+<start_sym_head name="inst_start" id="0x1" scope="0x0"/>
+<end_sym_head name="inst_next" id="0x2" scope="0x0"/>
+<varnode_sym_head name="F" id="0x3" scope="0x0"/>
+<varnode_sym_head name="A" id="0x4" scope="0x0"/>
+<varnode_sym_head name="C" id="0x5" scope="0x0"/>
+<varnode_sym_head name="B" id="0x6" scope="0x0"/>
+<varnode_sym_head name="E" id="0x7" scope="0x0"/>
+<varnode_sym_head name="D" id="0x8" scope="0x0"/>
+<varnode_sym_head name="L" id="0x9" scope="0x0"/>
+<varnode_sym_head name="H" id="0xa" scope="0x0"/>
+<varnode_sym_head name="AF" id="0xb" scope="0x0"/>
+<varnode_sym_head name="BC" id="0xc" scope="0x0"/>
+<varnode_sym_head name="DE" id="0xd" scope="0x0"/>
+<varnode_sym_head name="HL" id="0xe" scope="0x0"/>
+<varnode_sym_head name="A_" id="0xf" scope="0x0"/>
+<varnode_sym_head name="F_" id="0x10" scope="0x0"/>
+<varnode_sym_head name="B_" id="0x11" scope="0x0"/>
+<varnode_sym_head name="C_" id="0x12" scope="0x0"/>
+<varnode_sym_head name="D_" id="0x13" scope="0x0"/>
+<varnode_sym_head name="E_" id="0x14" scope="0x0"/>
+<varnode_sym_head name="H_" id="0x15" scope="0x0"/>
+<varnode_sym_head name="L_" id="0x16" scope="0x0"/>
+<varnode_sym_head name="AF_" id="0x17" scope="0x0"/>
+<varnode_sym_head name="BC_" id="0x18" scope="0x0"/>
+<varnode_sym_head name="DE_" id="0x19" scope="0x0"/>
+<varnode_sym_head name="HL_" id="0x1a" scope="0x0"/>
+<varnode_sym_head name="PC" id="0x1b" scope="0x0"/>
+<varnode_sym_head name="SP" id="0x1c" scope="0x0"/>
+<varnode_sym_head name="S_flag" id="0x1d" scope="0x0"/>
+<varnode_sym_head name="Z_flag" id="0x1e" scope="0x0"/>
+<varnode_sym_head name="AC_flag" id="0x1f" scope="0x0"/>
+<varnode_sym_head name="P_flag" id="0x20" scope="0x0"/>
+<varnode_sym_head name="CY_flag" id="0x21" scope="0x0"/>
+<value_sym_head name="op0_8" id="0x22" scope="0x0"/>
+<value_sym_head name="op6_2" id="0x23" scope="0x0"/>
+<varlist_sym_head name="dRegPair4_2" id="0x24" scope="0x0"/>
+<value_sym_head name="pRegPair4_2" id="0x25" scope="0x0"/>
+<varlist_sym_head name="sRegPair4_2" id="0x26" scope="0x0"/>
+<varlist_sym_head name="qRegPair4_2" id="0x27" scope="0x0"/>
+<value_sym_head name="rRegPair4_2" id="0x28" scope="0x0"/>
+<varlist_sym_head name="reg3_3" id="0x29" scope="0x0"/>
+<value_sym_head name="bits3_3" id="0x2a" scope="0x0"/>
+<value_sym_head name="bits0_4" id="0x2b" scope="0x0"/>
+<varlist_sym_head name="reg0_3" id="0x2c" scope="0x0"/>
+<value_sym_head name="bits0_3" id="0x2d" scope="0x0"/>
+<value_sym_head name="imm8" id="0x2e" scope="0x0"/>
+<value_sym_head name="sign8" id="0x2f" scope="0x0"/>
+<value_sym_head name="simm8" id="0x30" scope="0x0"/>
+<value_sym_head name="imm16" id="0x31" scope="0x0"/>
+<value_sym_head name="sign16" id="0x32" scope="0x0"/>
+<value_sym_head name="simm16" id="0x33" scope="0x0"/>
+<userop_head name="BCDadjust" id="0x34" scope="0x0"/>
+<userop_head name="hasEvenParity" id="0x35" scope="0x0"/>
+<userop_head name="disableMaskableInterrupts" id="0x36" scope="0x0"/>
+<userop_head name="enableMaskableInterrupts" id="0x37" scope="0x0"/>
+<userop_head name="readInterruptMask" id="0x38" scope="0x0"/>
+<userop_head name="setInterruptMask" id="0x39" scope="0x0"/>
+<subtable_sym_head name="Mem8" id="0x3a" scope="0x0"/>
+<operand_sym_head name="imm16" id="0x3b" scope="0x1"/>
+<subtable_sym_head name="Mem16" id="0x3c" scope="0x0"/>
+<operand_sym_head name="imm16" id="0x3d" scope="0x2"/>
+<subtable_sym_head name="Addr16" id="0x3e" scope="0x0"/>
+<operand_sym_head name="imm16" id="0x3f" scope="0x3"/>
+<subtable_sym_head name="RstAddr" id="0x40" scope="0x0"/>
+<operand_sym_head name="loc" id="0x41" scope="0x4"/>
+<operand_sym_head name="bits3_3" id="0x42" scope="0x4"/>
+<subtable_sym_head name="IOAddr8" id="0x43" scope="0x0"/>
+<operand_sym_head name="imm8" id="0x44" scope="0x5"/>
+<subtable_sym_head name="cc" id="0x45" scope="0x0"/>
+<operand_sym_head name="reg3_3" id="0x46" scope="0x6"/>
+<operand_sym_head name="reg0_3" id="0x47" scope="0x6"/>
+<operand_sym_head name="reg3_3" id="0x48" scope="0x7"/>
+<operand_sym_head name="imm8" id="0x49" scope="0x7"/>
+<operand_sym_head name="reg3_3" id="0x4a" scope="0x8"/>
+<operand_sym_head name="HL" id="0x4b" scope="0x8"/>
+<operand_sym_head name="HL" id="0x4c" scope="0x9"/>
+<operand_sym_head name="reg0_3" id="0x4d" scope="0x9"/>
+<operand_sym_head name="HL" id="0x4e" scope="0xa"/>
+<operand_sym_head name="imm8" id="0x4f" scope="0xa"/>
+<operand_sym_head name="BC" id="0x50" scope="0xb"/>
+<operand_sym_head name="DE" id="0x51" scope="0xc"/>
+<operand_sym_head name="Mem8" id="0x52" scope="0xd"/>
+<operand_sym_head name="BC" id="0x53" scope="0xe"/>
+<operand_sym_head name="DE" id="0x54" scope="0xf"/>
+<operand_sym_head name="Mem8" id="0x55" scope="0x10"/>
+<operand_sym_head name="dRegPair4_2" id="0x56" scope="0x11"/>
+<operand_sym_head name="imm16" id="0x57" scope="0x11"/>
+<operand_sym_head name="Mem16" id="0x58" scope="0x12"/>
+<operand_sym_head name="Mem16" id="0x59" scope="0x13"/>
+<operand_sym_head name="qRegPair4_2" id="0x5a" scope="0x14"/>
+<operand_sym_head name="qRegPair4_2" id="0x5b" scope="0x15"/>
+<operand_sym_head name="reg0_3" id="0x5c" scope="0x16"/>
+<operand_sym_head name="imm8" id="0x5d" scope="0x17"/>
+<operand_sym_head name="HL" id="0x5e" scope="0x18"/>
+<operand_sym_head name="reg0_3" id="0x5f" scope="0x19"/>
+<operand_sym_head name="imm8" id="0x60" scope="0x1a"/>
+<operand_sym_head name="HL" id="0x61" scope="0x1b"/>
+<operand_sym_head name="reg0_3" id="0x62" scope="0x1c"/>
+<operand_sym_head name="imm8" id="0x63" scope="0x1d"/>
+<operand_sym_head name="HL" id="0x64" scope="0x1e"/>
+<operand_sym_head name="reg0_3" id="0x65" scope="0x1f"/>
+<operand_sym_head name="imm8" id="0x66" scope="0x20"/>
+<operand_sym_head name="HL" id="0x67" scope="0x21"/>
+<operand_sym_head name="reg0_3" id="0x68" scope="0x22"/>
+<operand_sym_head name="imm8" id="0x69" scope="0x23"/>
+<operand_sym_head name="HL" id="0x6a" scope="0x24"/>
+<operand_sym_head name="reg0_3" id="0x6b" scope="0x25"/>
+<operand_sym_head name="imm8" id="0x6c" scope="0x26"/>
+<operand_sym_head name="HL" id="0x6d" scope="0x27"/>
+<operand_sym_head name="reg0_3" id="0x6e" scope="0x28"/>
+<operand_sym_head name="imm8" id="0x6f" scope="0x29"/>
+<operand_sym_head name="reg0_3" id="0x70" scope="0x2a"/>
+<operand_sym_head name="imm8" id="0x71" scope="0x2b"/>
+<operand_sym_head name="HL" id="0x72" scope="0x2c"/>
+<operand_sym_head name="reg3_3" id="0x73" scope="0x2d"/>
+<operand_sym_head name="HL" id="0x74" scope="0x2e"/>
+<operand_sym_head name="reg3_3" id="0x75" scope="0x2f"/>
+<operand_sym_head name="HL" id="0x76" scope="0x30"/>
+<operand_sym_head name="HL" id="0x77" scope="0x31"/>
+<operand_sym_head name="sRegPair4_2" id="0x78" scope="0x31"/>
+<operand_sym_head name="sRegPair4_2" id="0x79" scope="0x32"/>
+<operand_sym_head name="sRegPair4_2" id="0x7a" scope="0x33"/>
+<operand_sym_head name="Addr16" id="0x7b" scope="0x34"/>
+<operand_sym_head name="cc" id="0x7c" scope="0x35"/>
+<operand_sym_head name="Addr16" id="0x7d" scope="0x35"/>
+<operand_sym_head name="Addr16" id="0x7e" scope="0x36"/>
+<operand_sym_head name="cc" id="0x7f" scope="0x37"/>
+<operand_sym_head name="Addr16" id="0x80" scope="0x37"/>
+<operand_sym_head name="cc" id="0x81" scope="0x38"/>
+<operand_sym_head name="RstAddr" id="0x82" scope="0x39"/>
+<operand_sym_head name="IOAddr8" id="0x83" scope="0x3a"/>
+<operand_sym_head name="IOAddr8" id="0x84" scope="0x3b"/>
+<subtable_sym name="instruction" id="0x0" scope="0x0" numct="73">
+<constructor parent="0x0" first="1" length="1" line="133">
+<oper id="0x46"/>
+<oper id="0x47"/>
+<print piece="MOV"/>
+<print piece=" "/>
+<opprint id="0"/>
+<print piece=","/>
+<opprint id="1"/>
+<construct_tpl>
+<null/><op_tpl code="COPY"><varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="1" s="space"/><const_tpl type="handle" val="1" s="offset"/><const_tpl type="handle" val="1" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="137">
+<oper id="0x48"/>
+<oper id="0x49"/>
+<print piece="MVI"/>
+<print piece=" "/>
+<opprint id="0"/>
+<print piece=","/>
+<opprint id="1"/>
+<construct_tpl>
+<null/><op_tpl code="COPY"><varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="1" s="space"/><const_tpl type="handle" val="1" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="141">
+<oper id="0x4a"/>
+<oper id="0x4b"/>
+<print piece="MOV"/>
+<print piece=" "/>
+<opprint id="0"/>
+<print piece=",("/>
+<opprint id="1"/>
+<print piece=")"/>
+<construct_tpl>
+<null/><op_tpl code="LOAD"><varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="146">
+<oper id="0x4d"/>
+<oper id="0x4c"/>
+<print piece="MOV"/>
+<print piece=" "/>
+<print piece="("/>
+<opprint id="1"/>
+<print piece="),"/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="STORE"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="151">
+<oper id="0x4e"/>
+<oper id="0x4f"/>
+<print piece="MVI"/>
+<print piece=" "/>
+<print piece="("/>
+<opprint id="0"/>
+<print piece="),"/>
+<opprint id="1"/>
+<construct_tpl>
+<null/><op_tpl code="STORE"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="1" s="space"/><const_tpl type="handle" val="1" s="offset"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="156">
+<oper id="0x50"/>
+<print piece="LDAX"/>
+<print piece=" "/>
+<print piece="("/>
+<opprint id="0"/>
+<print piece=")"/>
+<construct_tpl>
+<null/><op_tpl code="LOAD"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x2"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="161">
+<oper id="0x51"/>
+<print piece="LDAX"/>
+<print piece=" "/>
+<print piece="("/>
+<opprint id="0"/>
+<print piece=")"/>
+<construct_tpl>
+<null/><op_tpl code="LOAD"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x4"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="3" line="166">
+<oper id="0x52"/>
+<print piece="LDA"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="170">
+<oper id="0x53"/>
+<print piece="STAX"/>
+<print piece=" "/>
+<print piece="("/>
+<opprint id="0"/>
+<print piece=")"/>
+<construct_tpl>
+<null/><op_tpl code="STORE"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x2"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="175">
+<oper id="0x54"/>
+<print piece="STAX"/>
+<print piece=" "/>
+<print piece="("/>
+<opprint id="0"/>
+<print piece=")"/>
+<construct_tpl>
+<null/><op_tpl code="STORE"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x4"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="3" line="180">
+<oper id="0x55"/>
+<print piece="STA"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="3" line="184">
+<oper id="0x56"/>
+<oper id="0x57"/>
+<print piece="LXI"/>
+<print piece=" "/>
+<opprint id="0"/>
+<print piece=","/>
+<opprint id="1"/>
+<construct_tpl>
+<null/><op_tpl code="COPY"><varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="1" s="space"/><const_tpl type="handle" val="1" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="3" line="188">
+<oper id="0x58"/>
+<print piece="LHLD"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="3" line="192">
+<oper id="0x59"/>
+<print piece="SHLD"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="196">
+<print piece="SPHL"/>
+<construct_tpl>
+<null/><op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="200">
+<oper id="0x5a"/>
+<print piece="PUSH"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x2"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="STORE"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="204">
+<oper id="0x5b"/>
+<print piece="POP"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="LOAD"><varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x2"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="208">
+<print piece="XCHG"/>
+<construct_tpl>
+<null/><op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x2c0"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x4"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x4"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x2c0"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="214">
+<print piece="XTHL"/>
+<construct_tpl>
+<null/><op_tpl code="LOAD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x2e0"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="STORE"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x2e0"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="220">
+<oper id="0x5c"/>
+<print piece="ADD"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="INT_CARRY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="226">
+<oper id="0x5d"/>
+<print piece="ADI"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="INT_CARRY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="232">
+<oper id="0x5e"/>
+<print piece="ADD"/>
+<print piece=" "/>
+<print piece="("/>
+<opprint id="0"/>
+<print piece=")"/>
+<construct_tpl>
+<null/><op_tpl code="LOAD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x320"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_CARRY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x320"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x320"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="239">
+<oper id="0x5f"/>
+<print piece="ADC"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="INT_CARRY"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x50"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_CARRY"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x60"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x50"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="BOOL_OR"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x60"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x340"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x340"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="245">
+<oper id="0x60"/>
+<print piece="ACI"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="INT_CARRY"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x50"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_CARRY"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x60"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x50"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="BOOL_OR"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x60"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x360"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x360"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="251">
+<oper id="0x61"/>
+<print piece="ADC"/>
+<print piece=" "/>
+<print piece="("/>
+<opprint id="0"/>
+<print piece=")"/>
+<construct_tpl>
+<null/><op_tpl code="LOAD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x390"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_CARRY"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x50"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_CARRY"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x60"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x390"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x50"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="BOOL_OR"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x60"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x3a0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x390"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x3a0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="258">
+<oper id="0x62"/>
+<print piece="SUB"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="INT_LESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="264">
+<oper id="0x63"/>
+<print piece="SUI"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="INT_LESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="270">
+<oper id="0x64"/>
+<print piece="SUB"/>
+<print piece=" "/>
+<print piece="("/>
+<opprint id="0"/>
+<print piece=")"/>
+<construct_tpl>
+<null/><op_tpl code="LOAD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x3f0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_LESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x3f0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x3f0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="277">
+<oper id="0x65"/>
+<print piece="SBB"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="INT_NEGATE"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xa0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_LESS"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xc0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xa0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xe0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xa0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_LESS"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xf0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xe0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="BOOL_OR"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xc0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xf0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x410"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x410"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="283">
+<oper id="0x66"/>
+<print piece="SBI"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="INT_NEGATE"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xa0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_LESS"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xc0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xa0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xe0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xa0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_LESS"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xf0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xe0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="BOOL_OR"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xc0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xf0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x430"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x430"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="289">
+<oper id="0x67"/>
+<print piece="SBB"/>
+<print piece=" "/>
+<print piece="("/>
+<opprint id="0"/>
+<print piece=")"/>
+<construct_tpl>
+<null/><op_tpl code="LOAD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x460"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_NEGATE"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xa0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_LESS"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xc0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xa0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xe0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xa0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_LESS"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xf0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x460"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xe0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="BOOL_OR"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xc0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0xf0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x470"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x460"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x470"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="296">
+<oper id="0x68"/>
+<print piece="ANA"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x32"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x33"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_AND"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="304">
+<oper id="0x69"/>
+<print piece="ANI"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x32"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x33"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_AND"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="312">
+<oper id="0x6a"/>
+<print piece="ANA"/>
+<print piece=" "/>
+<print piece="("/>
+<opprint id="0"/>
+<print piece=")"/>
+<construct_tpl>
+<null/><op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x32"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x33"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="LOAD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x4b0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_AND"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x4b0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="320">
+<oper id="0x6b"/>
+<print piece="ORA"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x32"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x33"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_OR"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="328">
+<oper id="0x6c"/>
+<print piece="ORI"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x32"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x33"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_OR"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="336">
+<oper id="0x6d"/>
+<print piece="ORA"/>
+<print piece=" "/>
+<print piece="("/>
+<opprint id="0"/>
+<print piece=")"/>
+<construct_tpl>
+<null/><op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x32"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x33"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="LOAD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x4f0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_OR"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x4f0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="344">
+<oper id="0x6e"/>
+<print piece="XRA"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x32"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x33"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_XOR"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="352">
+<oper id="0x6f"/>
+<print piece="XRI"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x32"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x33"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_XOR"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="360">
+<oper id="0x70"/>
+<print piece="CMP"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="INT_LESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x540"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x540"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x540"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="366">
+<oper id="0x71"/>
+<print piece="CPI"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="INT_LESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x560"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x560"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x560"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="372">
+<oper id="0x72"/>
+<print piece="CMP"/>
+<print piece=" "/>
+<print piece="("/>
+<opprint id="0"/>
+<print piece=")"/>
+<construct_tpl>
+<null/><op_tpl code="LOAD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x580"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_LESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x580"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x5a0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x580"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x580"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x580"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="379">
+<oper id="0x73"/>
+<print piece="INR"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x33"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x7f"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="385">
+<oper id="0x74"/>
+<print piece="INR"/>
+<print piece=" "/>
+<print piece="("/>
+<opprint id="0"/>
+<print piece=")"/>
+<construct_tpl>
+<null/><op_tpl code="LOAD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x5e0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x33"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x5e0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x7f"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x5e0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x5e0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="STORE"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x5e0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x5e0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x5e0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="393">
+<oper id="0x75"/>
+<print piece="DCR"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x33"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x80"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="399">
+<oper id="0x76"/>
+<print piece="DCR"/>
+<print piece=" "/>
+<print piece="("/>
+<opprint id="0"/>
+<print piece=")"/>
+<construct_tpl>
+<null/><op_tpl code="LOAD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x640"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x33"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x640"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x80"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x640"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x640"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="STORE"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x640"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x640"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x640"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="407">
+<print piece="DAA"/>
+<construct_tpl>
+<null/><op_tpl code="CALLOTHER"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="CALLOTHER"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x33"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="413">
+<print piece="CMA"/>
+<construct_tpl>
+<null/><op_tpl code="INT_NEGATE"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="417">
+<print piece="CMC"/>
+<construct_tpl>
+<null/><op_tpl code="BOOL_NEGATE"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="421">
+<print piece="STC"/>
+<construct_tpl>
+<null/><op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x32"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="426">
+<print piece="NOP"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="429">
+<print piece="HALT"/>
+<construct_tpl>
+<null/><op_tpl code="BRANCH"><null/>
+<varnode_tpl><const_tpl type="curspace"/><const_tpl type="start"/><const_tpl type="curspace_size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="433">
+<print piece="DI"/>
+<construct_tpl>
+<null/><op_tpl code="CALLOTHER"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x2"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="439">
+<print piece="EI"/>
+<construct_tpl>
+<null/><op_tpl code="CALLOTHER"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x3"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="445">
+<print piece="RIM"/>
+<construct_tpl>
+<null/><op_tpl code="CALLOTHER"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x4"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="449">
+<print piece="SIM"/>
+<construct_tpl>
+<null/><op_tpl code="CALLOTHER"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x5"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="453">
+<oper id="0x78"/>
+<oper id="0x77"/>
+<print piece="DAD"/>
+<print piece=" "/>
+<opprint id="1"/>
+<print piece=","/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="INT_CARRY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="458">
+<oper id="0x79"/>
+<print piece="INX"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="462">
+<oper id="0x7a"/>
+<print piece="DCX"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="466">
+<print piece="RLC"/>
+<construct_tpl>
+<null/><op_tpl code="INT_RIGHT"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x7"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_LEFT"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x700"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_OR"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x700"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x32"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="472">
+<print piece="RAL"/>
+<construct_tpl>
+<null/><op_tpl code="INT_RIGHT"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x730"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x7"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_LEFT"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x740"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_OR"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x740"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x730"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x32"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="479">
+<print piece="RRC"/>
+<construct_tpl>
+<null/><op_tpl code="INT_AND"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_RIGHT"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x770"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_LEFT"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x780"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x7"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_OR"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x770"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x780"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x32"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="485">
+<print piece="RAR"/>
+<construct_tpl>
+<null/><op_tpl code="INT_AND"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x7b0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_RIGHT"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x7c0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_LEFT"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x7d0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x7"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_OR"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x7c0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x7d0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x7b0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x32"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="3" line="492">
+<oper id="0x7b"/>
+<print piece="JMP"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="BRANCH"><null/>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="2" length="3" line="496">
+<oper id="0x7c"/>
+<oper id="0x7d"/>
+<print piece="J"/>
+<opprint id="0"/>
+<print piece=" "/>
+<opprint id="1"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="CBRANCH"><null/>
+<varnode_tpl><const_tpl type="handle" val="1" s="space"/><const_tpl type="handle" val="1" s="offset"/><const_tpl type="handle" val="1" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="500">
+<print piece="PCHL"/>
+<construct_tpl>
+<null/><op_tpl code="BRANCHIND"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x6"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="3" line="504">
+<oper id="0x7e"/>
+<print piece="CALL"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x2"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="STORE"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="next"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="CALL"><null/>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="2" length="3" line="510">
+<oper id="0x7f"/>
+<oper id="0x80"/>
+<print piece="C"/>
+<opprint id="0"/>
+<print piece=" "/>
+<opprint id="1"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="BOOL_NEGATE"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x800"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="CBRANCH"><null/>
+<varnode_tpl><const_tpl type="curspace"/><const_tpl type="next"/><const_tpl type="curspace_size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x800"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x2"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="STORE"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="next"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="CALL"><null/>
+<varnode_tpl><const_tpl type="handle" val="1" s="space"/><const_tpl type="handle" val="1" s="offset"/><const_tpl type="handle" val="1" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="517">
+<print piece="RET"/>
+<construct_tpl>
+<null/><op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x820"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="LOAD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x820"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x2"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="RETURN"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x820"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="2" length="1" line="523">
+<oper id="0x81"/>
+<print piece="R"/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="BOOL_NEGATE"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x830"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="CBRANCH"><null/>
+<varnode_tpl><const_tpl type="curspace"/><const_tpl type="next"/><const_tpl type="curspace_size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x830"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x840"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="LOAD"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x840"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x2"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="RETURN"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x840"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="530">
+<oper id="0x82"/>
+<print piece="RST"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x2"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="STORE"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x22"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="next"/><const_tpl type="real" val="0x2"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="CALL"><null/>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="536">
+<oper id="0x83"/>
+<print piece="IN"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="540">
+<oper id="0x84"/>
+<print piece="OUT"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<decision number="73" context="false" start="0" size="2">
+<decision number="29" context="false" start="5" size="3">
+<decision number="3" context="false" start="2" size="2">
+<decision number="1" context="false" start="0" size="0">
+<pair id="50">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x0"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="54">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x20000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="55">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x30000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="2" context="false" start="4" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="11">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xcf000000" val="0x1000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="56">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xcf000000" val="0x9000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="8" context="false" start="2" size="3">
+<decision number="1" context="false" start="0" size="0">
+<pair id="8">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x2000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="5">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xa000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="9">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x12000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="6">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x1a000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="13">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x22000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="12">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x2a000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="10">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x32000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="7">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x3a000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="2" context="false" start="4" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="57">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xcf000000" val="0x3000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="58">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xcf000000" val="0xb000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="2" context="false" start="0" size="0">
+<pair id="43">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x34000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="42">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xc7000000" val="0x4000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="2" context="false" start="0" size="0">
+<pair id="45">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x35000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="44">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xc7000000" val="0x5000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="2" context="false" start="0" size="0">
+<pair id="4">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x36000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="1">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xc7000000" val="0x6000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="8" context="false" start="2" size="3">
+<decision number="1" context="false" start="0" size="0">
+<pair id="59">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x7000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="61">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xf000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="60">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x17000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="62">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x1f000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="46">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x27000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="47">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x2f000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="49">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x37000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="48">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x3f000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+</decision>
+<decision number="4" context="false" start="0" size="0">
+<pair id="51">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x76000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="2">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xc7000000" val="0x46000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="3">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xf8000000" val="0x70000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="0">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xc0000000" val="0x40000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="15" context="false" start="2" size="3">
+<decision number="2" context="false" start="0" size="0">
+<pair id="21">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x86000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="19">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xf8000000" val="0x80000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="2" context="false" start="0" size="0">
+<pair id="24">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x8e000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="22">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xf8000000" val="0x88000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="2" context="false" start="0" size="0">
+<pair id="27">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x96000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="25">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xf8000000" val="0x90000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="2" context="false" start="0" size="0">
+<pair id="30">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x9e000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="28">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xf8000000" val="0x98000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="2" context="false" start="0" size="0">
+<pair id="33">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xa6000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="31">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xf8000000" val="0xa0000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="37">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xf8000000" val="0xa8000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="2" context="false" start="0" size="0">
+<pair id="36">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xb6000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="34">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xf8000000" val="0xb0000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="2" context="false" start="0" size="0">
+<pair id="41">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xbe000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="39">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xf8000000" val="0xb8000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="25" context="false" start="5" size="3">
+<decision number="1" context="false" start="0" size="0">
+<pair id="69">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xc7000000" val="0xc0000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="4" context="false" start="4" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="16">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xcf000000" val="0xc1000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="3" context="false" start="2" size="2">
+<decision number="1" context="false" start="0" size="0">
+<pair id="68">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xc9000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="65">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xe9000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="14">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xf9000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="64">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xc7000000" val="0xc2000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="7" context="false" start="2" size="3">
+<decision number="1" context="false" start="0" size="0">
+<pair id="63">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xc3000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="72">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xd3000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="71">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xdb000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="18">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xe3000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="17">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xeb000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="52">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xf3000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="53">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xfb000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="67">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xc7000000" val="0xc4000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="2" context="false" start="4" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="15">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xcf000000" val="0xc5000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="66">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xcd000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="8" context="false" start="2" size="3">
+<decision number="1" context="false" start="0" size="0">
+<pair id="20">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xc6000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="23">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xce000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="26">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xd6000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="29">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xde000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="32">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xe6000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="38">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xee000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="35">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xf6000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="40">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xfe000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="70">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xc7000000" val="0xc7000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+</decision>
+</subtable_sym>
+<start_sym name="inst_start" id="0x1" scope="0x0"/>
+<end_sym name="inst_next" id="0x2" scope="0x0"/>
+<varnode_sym name="F" id="0x3" scope="0x0" space="register" offset="0x0" size="1">
+</varnode_sym>
+<varnode_sym name="A" id="0x4" scope="0x0" space="register" offset="0x1" size="1">
+</varnode_sym>
+<varnode_sym name="C" id="0x5" scope="0x0" space="register" offset="0x2" size="1">
+</varnode_sym>
+<varnode_sym name="B" id="0x6" scope="0x0" space="register" offset="0x3" size="1">
+</varnode_sym>
+<varnode_sym name="E" id="0x7" scope="0x0" space="register" offset="0x4" size="1">
+</varnode_sym>
+<varnode_sym name="D" id="0x8" scope="0x0" space="register" offset="0x5" size="1">
+</varnode_sym>
+<varnode_sym name="L" id="0x9" scope="0x0" space="register" offset="0x6" size="1">
+</varnode_sym>
+<varnode_sym name="H" id="0xa" scope="0x0" space="register" offset="0x7" size="1">
+</varnode_sym>
+<varnode_sym name="AF" id="0xb" scope="0x0" space="register" offset="0x0" size="2">
+</varnode_sym>
+<varnode_sym name="BC" id="0xc" scope="0x0" space="register" offset="0x2" size="2">
+</varnode_sym>
+<varnode_sym name="DE" id="0xd" scope="0x0" space="register" offset="0x4" size="2">
+</varnode_sym>
+<varnode_sym name="HL" id="0xe" scope="0x0" space="register" offset="0x6" size="2">
+</varnode_sym>
+<varnode_sym name="A_" id="0xf" scope="0x0" space="register" offset="0x10" size="1">
+</varnode_sym>
+<varnode_sym name="F_" id="0x10" scope="0x0" space="register" offset="0x11" size="1">
+</varnode_sym>
+<varnode_sym name="B_" id="0x11" scope="0x0" space="register" offset="0x12" size="1">
+</varnode_sym>
+<varnode_sym name="C_" id="0x12" scope="0x0" space="register" offset="0x13" size="1">
+</varnode_sym>
+<varnode_sym name="D_" id="0x13" scope="0x0" space="register" offset="0x14" size="1">
+</varnode_sym>
+<varnode_sym name="E_" id="0x14" scope="0x0" space="register" offset="0x15" size="1">
+</varnode_sym>
+<varnode_sym name="H_" id="0x15" scope="0x0" space="register" offset="0x16" size="1">
+</varnode_sym>
+<varnode_sym name="L_" id="0x16" scope="0x0" space="register" offset="0x17" size="1">
+</varnode_sym>
+<varnode_sym name="AF_" id="0x17" scope="0x0" space="register" offset="0x10" size="2">
+</varnode_sym>
+<varnode_sym name="BC_" id="0x18" scope="0x0" space="register" offset="0x12" size="2">
+</varnode_sym>
+<varnode_sym name="DE_" id="0x19" scope="0x0" space="register" offset="0x14" size="2">
+</varnode_sym>
+<varnode_sym name="HL_" id="0x1a" scope="0x0" space="register" offset="0x16" size="2">
+</varnode_sym>
+<varnode_sym name="PC" id="0x1b" scope="0x0" space="register" offset="0x20" size="2">
+</varnode_sym>
+<varnode_sym name="SP" id="0x1c" scope="0x0" space="register" offset="0x22" size="2">
+</varnode_sym>
+<varnode_sym name="S_flag" id="0x1d" scope="0x0" space="register" offset="0x30" size="1">
+</varnode_sym>
+<varnode_sym name="Z_flag" id="0x1e" scope="0x0" space="register" offset="0x31" size="1">
+</varnode_sym>
+<varnode_sym name="AC_flag" id="0x1f" scope="0x0" space="register" offset="0x32" size="1">
+</varnode_sym>
+<varnode_sym name="P_flag" id="0x20" scope="0x0" space="register" offset="0x33" size="1">
+</varnode_sym>
+<varnode_sym name="CY_flag" id="0x21" scope="0x0" space="register" offset="0x34" size="1">
+</varnode_sym>
+<value_sym name="op0_8" id="0x22" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</value_sym>
+<value_sym name="op6_2" id="0x23" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="6" bitend="7" bytestart="0" byteend="0" shift="6"/>
+</value_sym>
+<varlist_sym name="dRegPair4_2" id="0x24" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="4" bitend="5" bytestart="0" byteend="0" shift="4"/>
+<var id="0xc"/>
+<var id="0xd"/>
+<var id="0xe"/>
+<var id="0x1c"/>
+</varlist_sym>
+<value_sym name="pRegPair4_2" id="0x25" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="4" bitend="5" bytestart="0" byteend="0" shift="4"/>
+</value_sym>
+<varlist_sym name="sRegPair4_2" id="0x26" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="4" bitend="5" bytestart="0" byteend="0" shift="4"/>
+<var id="0xc"/>
+<var id="0xd"/>
+<var id="0xe"/>
+<var id="0x1c"/>
+</varlist_sym>
+<varlist_sym name="qRegPair4_2" id="0x27" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="4" bitend="5" bytestart="0" byteend="0" shift="4"/>
+<var id="0xc"/>
+<var id="0xd"/>
+<var id="0xe"/>
+<var id="0xb"/>
+</varlist_sym>
+<value_sym name="rRegPair4_2" id="0x28" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="4" bitend="5" bytestart="0" byteend="0" shift="4"/>
+</value_sym>
+<varlist_sym name="reg3_3" id="0x29" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="3" bitend="5" bytestart="0" byteend="0" shift="3"/>
+<var id="0x6"/>
+<var id="0x5"/>
+<var id="0x8"/>
+<var id="0x7"/>
+<var id="0xa"/>
+<var id="0x9"/>
+<null/>
+<var id="0x4"/>
+</varlist_sym>
+<value_sym name="bits3_3" id="0x2a" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="3" bitend="5" bytestart="0" byteend="0" shift="3"/>
+</value_sym>
+<value_sym name="bits0_4" id="0x2b" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="3" bytestart="0" byteend="0" shift="0"/>
+</value_sym>
+<varlist_sym name="reg0_3" id="0x2c" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="2" bytestart="0" byteend="0" shift="0"/>
+<var id="0x6"/>
+<var id="0x5"/>
+<var id="0x8"/>
+<var id="0x7"/>
+<var id="0xa"/>
+<var id="0x9"/>
+<null/>
+<var id="0x4"/>
+</varlist_sym>
+<value_sym name="bits0_3" id="0x2d" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="2" bytestart="0" byteend="0" shift="0"/>
+</value_sym>
+<value_sym name="imm8" id="0x2e" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</value_sym>
+<value_sym name="sign8" id="0x2f" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="7" bitend="7" bytestart="0" byteend="0" shift="7"/>
+</value_sym>
+<value_sym name="simm8" id="0x30" scope="0x0">
+<tokenfield bigendian="false" signbit="true" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</value_sym>
+<value_sym name="imm16" id="0x31" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="15" bytestart="0" byteend="1" shift="0"/>
+</value_sym>
+<value_sym name="sign16" id="0x32" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="15" bitend="15" bytestart="1" byteend="1" shift="7"/>
+</value_sym>
+<value_sym name="simm16" id="0x33" scope="0x0">
+<tokenfield bigendian="false" signbit="true" bitstart="0" bitend="15" bytestart="0" byteend="1" shift="0"/>
+</value_sym>
+<userop name="BCDadjust" id="0x34" scope="0x0" index="0"/>
+<userop name="hasEvenParity" id="0x35" scope="0x0" index="1"/>
+<userop name="disableMaskableInterrupts" id="0x36" scope="0x0" index="2"/>
+<userop name="enableMaskableInterrupts" id="0x37" scope="0x0" index="3"/>
+<userop name="readInterruptMask" id="0x38" scope="0x0" index="4"/>
+<userop name="setInterruptMask" id="0x39" scope="0x0" index="5"/>
+<subtable_sym name="Mem8" id="0x3a" scope="0x0" numct="1">
+<constructor parent="0x3a" first="3" length="2" line="113">
+<oper id="0x3b"/>
+<print piece="("/>
+<opprint id="0"/>
+<print piece=")"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x1"/><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x0"/><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x150"/></handle_tpl>
+</construct_tpl>
+</constructor>
+<decision number="1" context="false" start="0" size="0">
+<pair id="0">
+<instruct_pat>
+<pat_block offset="0" nonzero="0">
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</subtable_sym>
+<operand_sym name="imm16" id="0x3b" scope="0x1" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x3a" ct="0x0"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="15" bytestart="0" byteend="1" shift="0"/>
+</operand_sym>
+<subtable_sym name="Mem16" id="0x3c" scope="0x0" numct="1">
+<constructor parent="0x3c" first="3" length="2" line="114">
+<oper id="0x3d"/>
+<print piece="("/>
+<opprint id="0"/>
+<print piece=")"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x2"/><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x0"/><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x160"/></handle_tpl>
+</construct_tpl>
+</constructor>
+<decision number="1" context="false" start="0" size="0">
+<pair id="0">
+<instruct_pat>
+<pat_block offset="0" nonzero="0">
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</subtable_sym>
+<operand_sym name="imm16" id="0x3d" scope="0x2" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x3c" ct="0x0"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="15" bytestart="0" byteend="1" shift="0"/>
+</operand_sym>
+<subtable_sym name="Addr16" id="0x3e" scope="0x0" numct="1">
+<constructor parent="0x3e" first="1" length="2" line="116">
+<oper id="0x3f"/>
+<opprint id="0"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x1"/><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x0"/><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x170"/></handle_tpl>
+</construct_tpl>
+</constructor>
+<decision number="1" context="false" start="0" size="0">
+<pair id="0">
+<instruct_pat>
+<pat_block offset="0" nonzero="0">
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</subtable_sym>
+<operand_sym name="imm16" id="0x3f" scope="0x3" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x3e" ct="0x0"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="15" bytestart="0" byteend="1" shift="0"/>
+</operand_sym>
+<subtable_sym name="RstAddr" id="0x40" scope="0x0" numct="1">
+<constructor parent="0x40" first="1" length="1" line="118">
+<oper id="0x42"/>
+<oper id="0x41"/>
+<opprint id="1"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x1"/><const_tpl type="handle" val="1" s="space"/><const_tpl type="handle" val="1" s="offset"/><const_tpl type="real" val="0x0"/><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x180"/></handle_tpl>
+</construct_tpl>
+</constructor>
+<decision number="1" context="false" start="0" size="0">
+<pair id="0">
+<instruct_pat>
+<pat_block offset="0" nonzero="0">
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</subtable_sym>
+<operand_sym name="loc" id="0x41" scope="0x4" off="0" base="-1" minlen="0" index="1">
+<operand_exp index="1" table="0x40" ct="0x0"/>
+<lshift_exp>
+<operand_exp index="0" table="0x40" ct="0x0"/>
+<intb val="3"/>
+</lshift_exp>
+</operand_sym>
+<operand_sym name="bits3_3" id="0x42" scope="0x4" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x40" ct="0x0"/>
+<tokenfield bigendian="false" signbit="false" bitstart="3" bitend="5" bytestart="0" byteend="0" shift="3"/>
+</operand_sym>
+<subtable_sym name="IOAddr8" id="0x43" scope="0x0" numct="1">
+<constructor parent="0x43" first="3" length="1" line="120">
+<oper id="0x44"/>
+<print piece="("/>
+<opprint id="0"/>
+<print piece=")"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="spaceid" name="io"/><const_tpl type="real" val="0x1"/><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x0"/><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x190"/></handle_tpl>
+</construct_tpl>
+</constructor>
+<decision number="1" context="false" start="0" size="0">
+<pair id="0">
+<instruct_pat>
+<pat_block offset="0" nonzero="0">
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</subtable_sym>
+<operand_sym name="imm8" id="0x44" scope="0x5" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x43" ct="0x0"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<subtable_sym name="cc" id="0x45" scope="0x0" numct="8">
+<constructor parent="0x45" first="1" length="1" line="122">
+<print piece="NZ"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1b0"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/></handle_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x1b0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x45" first="1" length="1" line="123">
+<print piece="Z"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x31"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/></handle_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x45" first="1" length="1" line="124">
+<print piece="NC"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1d0"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/></handle_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x1d0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x45" first="1" length="1" line="125">
+<print piece="C"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x34"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/></handle_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x45" first="1" length="1" line="126">
+<print piece="PO"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1f0"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/></handle_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x1f0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x33"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x45" first="1" length="1" line="127">
+<print piece="PE"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x33"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/></handle_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x45" first="1" length="1" line="128">
+<print piece="P"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x210"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/></handle_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x210"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x45" first="1" length="1" line="129">
+<print piece="M"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/></handle_tpl>
+</construct_tpl>
+</constructor>
+<decision number="8" context="false" start="2" size="3">
+<decision number="1" context="false" start="0" size="0">
+<pair id="0">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0x38000000" val="0x0"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="1">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0x38000000" val="0x8000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="2">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0x38000000" val="0x10000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="3">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0x38000000" val="0x18000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="4">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0x38000000" val="0x20000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="5">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0x38000000" val="0x28000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="6">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0x38000000" val="0x30000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="7">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0x38000000" val="0x38000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+</subtable_sym>
+<operand_sym name="reg3_3" id="0x46" scope="0x6" subsym="0x29" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x0"/>
+</operand_sym>
+<operand_sym name="reg0_3" id="0x47" scope="0x6" subsym="0x2c" off="0" base="-1" minlen="1" index="1">
+<operand_exp index="1" table="0x0" ct="0x0"/>
+</operand_sym>
+<operand_sym name="reg3_3" id="0x48" scope="0x7" subsym="0x29" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x1"/>
+</operand_sym>
+<operand_sym name="imm8" id="0x49" scope="0x7" off="1" base="-1" minlen="1" index="1">
+<operand_exp index="1" table="0x0" ct="0x1"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="reg3_3" id="0x4a" scope="0x8" subsym="0x29" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x2"/>
+</operand_sym>
+<operand_sym name="HL" id="0x4b" scope="0x8" subsym="0xe" off="0" base="-1" minlen="0" index="1">
+<operand_exp index="1" table="0x0" ct="0x2"/>
+</operand_sym>
+<operand_sym name="HL" id="0x4c" scope="0x9" subsym="0xe" off="0" base="-1" minlen="0" index="1">
+<operand_exp index="1" table="0x0" ct="0x3"/>
+</operand_sym>
+<operand_sym name="reg0_3" id="0x4d" scope="0x9" subsym="0x2c" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x3"/>
+</operand_sym>
+<operand_sym name="HL" id="0x4e" scope="0xa" subsym="0xe" off="0" base="-1" minlen="0" index="0">
+<operand_exp index="0" table="0x0" ct="0x4"/>
+</operand_sym>
+<operand_sym name="imm8" id="0x4f" scope="0xa" off="1" base="-1" minlen="1" index="1">
+<operand_exp index="1" table="0x0" ct="0x4"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="BC" id="0x50" scope="0xb" subsym="0xc" off="0" base="-1" minlen="0" index="0">
+<operand_exp index="0" table="0x0" ct="0x5"/>
+</operand_sym>
+<operand_sym name="DE" id="0x51" scope="0xc" subsym="0xd" off="0" base="-1" minlen="0" index="0">
+<operand_exp index="0" table="0x0" ct="0x6"/>
+</operand_sym>
+<operand_sym name="Mem8" id="0x52" scope="0xd" subsym="0x3a" off="1" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x7"/>
+</operand_sym>
+<operand_sym name="BC" id="0x53" scope="0xe" subsym="0xc" off="0" base="-1" minlen="0" index="0">
+<operand_exp index="0" table="0x0" ct="0x8"/>
+</operand_sym>
+<operand_sym name="DE" id="0x54" scope="0xf" subsym="0xd" off="0" base="-1" minlen="0" index="0">
+<operand_exp index="0" table="0x0" ct="0x9"/>
+</operand_sym>
+<operand_sym name="Mem8" id="0x55" scope="0x10" subsym="0x3a" off="1" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0xa"/>
+</operand_sym>
+<operand_sym name="dRegPair4_2" id="0x56" scope="0x11" subsym="0x24" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0xb"/>
+</operand_sym>
+<operand_sym name="imm16" id="0x57" scope="0x11" off="1" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0xb"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="15" bytestart="0" byteend="1" shift="0"/>
+</operand_sym>
+<operand_sym name="Mem16" id="0x58" scope="0x12" subsym="0x3c" off="1" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0xc"/>
+</operand_sym>
+<operand_sym name="Mem16" id="0x59" scope="0x13" subsym="0x3c" off="1" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0xd"/>
+</operand_sym>
+<operand_sym name="qRegPair4_2" id="0x5a" scope="0x14" subsym="0x27" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0xf"/>
+</operand_sym>
+<operand_sym name="qRegPair4_2" id="0x5b" scope="0x15" subsym="0x27" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x10"/>
+</operand_sym>
+<operand_sym name="reg0_3" id="0x5c" scope="0x16" subsym="0x2c" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x13"/>
+</operand_sym>
+<operand_sym name="imm8" id="0x5d" scope="0x17" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x14"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="HL" id="0x5e" scope="0x18" subsym="0xe" off="0" base="-1" minlen="0" index="0">
+<operand_exp index="0" table="0x0" ct="0x15"/>
+</operand_sym>
+<operand_sym name="reg0_3" id="0x5f" scope="0x19" subsym="0x2c" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x16"/>
+</operand_sym>
+<operand_sym name="imm8" id="0x60" scope="0x1a" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x17"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="HL" id="0x61" scope="0x1b" subsym="0xe" off="0" base="-1" minlen="0" index="0">
+<operand_exp index="0" table="0x0" ct="0x18"/>
+</operand_sym>
+<operand_sym name="reg0_3" id="0x62" scope="0x1c" subsym="0x2c" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x19"/>
+</operand_sym>
+<operand_sym name="imm8" id="0x63" scope="0x1d" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x1a"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="HL" id="0x64" scope="0x1e" subsym="0xe" off="0" base="-1" minlen="0" index="0">
+<operand_exp index="0" table="0x0" ct="0x1b"/>
+</operand_sym>
+<operand_sym name="reg0_3" id="0x65" scope="0x1f" subsym="0x2c" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x1c"/>
+</operand_sym>
+<operand_sym name="imm8" id="0x66" scope="0x20" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x1d"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="HL" id="0x67" scope="0x21" subsym="0xe" off="0" base="-1" minlen="0" index="0">
+<operand_exp index="0" table="0x0" ct="0x1e"/>
+</operand_sym>
+<operand_sym name="reg0_3" id="0x68" scope="0x22" subsym="0x2c" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x1f"/>
+</operand_sym>
+<operand_sym name="imm8" id="0x69" scope="0x23" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x20"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="HL" id="0x6a" scope="0x24" subsym="0xe" off="0" base="-1" minlen="0" index="0">
+<operand_exp index="0" table="0x0" ct="0x21"/>
+</operand_sym>
+<operand_sym name="reg0_3" id="0x6b" scope="0x25" subsym="0x2c" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x22"/>
+</operand_sym>
+<operand_sym name="imm8" id="0x6c" scope="0x26" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x23"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="HL" id="0x6d" scope="0x27" subsym="0xe" off="0" base="-1" minlen="0" index="0">
+<operand_exp index="0" table="0x0" ct="0x24"/>
+</operand_sym>
+<operand_sym name="reg0_3" id="0x6e" scope="0x28" subsym="0x2c" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x25"/>
+</operand_sym>
+<operand_sym name="imm8" id="0x6f" scope="0x29" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x26"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="reg0_3" id="0x70" scope="0x2a" subsym="0x2c" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x27"/>
+</operand_sym>
+<operand_sym name="imm8" id="0x71" scope="0x2b" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x28"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="HL" id="0x72" scope="0x2c" subsym="0xe" off="0" base="-1" minlen="0" index="0">
+<operand_exp index="0" table="0x0" ct="0x29"/>
+</operand_sym>
+<operand_sym name="reg3_3" id="0x73" scope="0x2d" subsym="0x29" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x2a"/>
+</operand_sym>
+<operand_sym name="HL" id="0x74" scope="0x2e" subsym="0xe" off="0" base="-1" minlen="0" index="0">
+<operand_exp index="0" table="0x0" ct="0x2b"/>
+</operand_sym>
+<operand_sym name="reg3_3" id="0x75" scope="0x2f" subsym="0x29" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x2c"/>
+</operand_sym>
+<operand_sym name="HL" id="0x76" scope="0x30" subsym="0xe" off="0" base="-1" minlen="0" index="0">
+<operand_exp index="0" table="0x0" ct="0x2d"/>
+</operand_sym>
+<operand_sym name="HL" id="0x77" scope="0x31" subsym="0xe" off="0" base="-1" minlen="0" index="1">
+<operand_exp index="1" table="0x0" ct="0x38"/>
+</operand_sym>
+<operand_sym name="sRegPair4_2" id="0x78" scope="0x31" subsym="0x26" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x38"/>
+</operand_sym>
+<operand_sym name="sRegPair4_2" id="0x79" scope="0x32" subsym="0x26" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x39"/>
+</operand_sym>
+<operand_sym name="sRegPair4_2" id="0x7a" scope="0x33" subsym="0x26" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x3a"/>
+</operand_sym>
+<operand_sym name="Addr16" id="0x7b" scope="0x34" subsym="0x3e" off="1" base="-1" minlen="2" code="true" index="0">
+<operand_exp index="0" table="0x0" ct="0x3f"/>
+</operand_sym>
+<operand_sym name="cc" id="0x7c" scope="0x35" subsym="0x45" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x40"/>
+</operand_sym>
+<operand_sym name="Addr16" id="0x7d" scope="0x35" subsym="0x3e" off="1" base="-1" minlen="2" code="true" index="1">
+<operand_exp index="1" table="0x0" ct="0x40"/>
+</operand_sym>
+<operand_sym name="Addr16" id="0x7e" scope="0x36" subsym="0x3e" off="1" base="-1" minlen="2" code="true" index="0">
+<operand_exp index="0" table="0x0" ct="0x42"/>
+</operand_sym>
+<operand_sym name="cc" id="0x7f" scope="0x37" subsym="0x45" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x43"/>
+</operand_sym>
+<operand_sym name="Addr16" id="0x80" scope="0x37" subsym="0x3e" off="1" base="-1" minlen="2" code="true" index="1">
+<operand_exp index="1" table="0x0" ct="0x43"/>
+</operand_sym>
+<operand_sym name="cc" id="0x81" scope="0x38" subsym="0x45" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x45"/>
+</operand_sym>
+<operand_sym name="RstAddr" id="0x82" scope="0x39" subsym="0x40" off="0" base="-1" minlen="1" code="true" index="0">
+<operand_exp index="0" table="0x0" ct="0x46"/>
+</operand_sym>
+<operand_sym name="IOAddr8" id="0x83" scope="0x3a" subsym="0x43" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x47"/>
+</operand_sym>
+<operand_sym name="IOAddr8" id="0x84" scope="0x3b" subsym="0x43" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x48"/>
+</operand_sym>
+</symbol_table>
+</sleigh>

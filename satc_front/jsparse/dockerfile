@@ -1,0 +1,13 @@
+FROM node:10
+
+MAINTAINER TT <tt.jiaqi@gmail.com>
+
+ADD . /app
+
+WORKDIR /app
+
+RUN npm install -g --force nodemon && npm install --registry=https://registry.npm.taobao.org
+
+
+# ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["npm","run","dev"]

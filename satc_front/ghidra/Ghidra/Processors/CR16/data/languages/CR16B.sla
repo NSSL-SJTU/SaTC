@@ -1,0 +1,2699 @@
+<sleigh version="2" bigendian="false" align="2" uniqbase="0x0">
+<spaces defaultspace="ram">
+<space_other name="OTHER" index="1" bigendian="false" delay="0" size="8" physical="false"/>
+<space_unique name="unique" index="2" bigendian="false" delay="0" size="4" physical="true"/>
+<space name="ram" index="3" bigendian="false" delay="1" size="3" physical="true"/>
+<space name="register" index="4" bigendian="false" delay="0" size="2" physical="true"/>
+</spaces>
+<symbol_table scopesize="80" symbolsize="233">
+<scope id="0x0" parent="0x0"/>
+<scope id="0x1" parent="0x0"/>
+<scope id="0x2" parent="0x0"/>
+<scope id="0x3" parent="0x0"/>
+<scope id="0x4" parent="0x0"/>
+<scope id="0x5" parent="0x0"/>
+<scope id="0x6" parent="0x0"/>
+<scope id="0x7" parent="0x0"/>
+<scope id="0x8" parent="0x0"/>
+<scope id="0x9" parent="0x0"/>
+<scope id="0xa" parent="0x0"/>
+<scope id="0xb" parent="0x0"/>
+<scope id="0xc" parent="0x0"/>
+<scope id="0xd" parent="0x0"/>
+<scope id="0xe" parent="0x0"/>
+<scope id="0xf" parent="0x0"/>
+<scope id="0x10" parent="0x0"/>
+<scope id="0x11" parent="0x0"/>
+<scope id="0x12" parent="0x0"/>
+<scope id="0x13" parent="0x0"/>
+<scope id="0x14" parent="0x0"/>
+<scope id="0x15" parent="0x0"/>
+<scope id="0x16" parent="0x0"/>
+<scope id="0x17" parent="0x0"/>
+<scope id="0x18" parent="0x0"/>
+<scope id="0x19" parent="0x0"/>
+<scope id="0x1a" parent="0x0"/>
+<scope id="0x1b" parent="0x0"/>
+<scope id="0x1c" parent="0x0"/>
+<scope id="0x1d" parent="0x0"/>
+<scope id="0x1e" parent="0x0"/>
+<scope id="0x1f" parent="0x0"/>
+<scope id="0x20" parent="0x0"/>
+<scope id="0x21" parent="0x0"/>
+<scope id="0x22" parent="0x0"/>
+<scope id="0x23" parent="0x0"/>
+<scope id="0x24" parent="0x0"/>
+<scope id="0x25" parent="0x0"/>
+<scope id="0x26" parent="0x0"/>
+<scope id="0x27" parent="0x0"/>
+<scope id="0x28" parent="0x0"/>
+<scope id="0x29" parent="0x0"/>
+<scope id="0x2a" parent="0x0"/>
+<scope id="0x2b" parent="0x0"/>
+<scope id="0x2c" parent="0x0"/>
+<scope id="0x2d" parent="0x0"/>
+<scope id="0x2e" parent="0x0"/>
+<scope id="0x2f" parent="0x0"/>
+<scope id="0x30" parent="0x0"/>
+<scope id="0x31" parent="0x0"/>
+<scope id="0x32" parent="0x0"/>
+<scope id="0x33" parent="0x0"/>
+<scope id="0x34" parent="0x0"/>
+<scope id="0x35" parent="0x0"/>
+<scope id="0x36" parent="0x0"/>
+<scope id="0x37" parent="0x0"/>
+<scope id="0x38" parent="0x0"/>
+<scope id="0x39" parent="0x0"/>
+<scope id="0x3a" parent="0x0"/>
+<scope id="0x3b" parent="0x0"/>
+<scope id="0x3c" parent="0x0"/>
+<scope id="0x3d" parent="0x0"/>
+<scope id="0x3e" parent="0x0"/>
+<scope id="0x3f" parent="0x0"/>
+<scope id="0x40" parent="0x0"/>
+<scope id="0x41" parent="0x0"/>
+<scope id="0x42" parent="0x0"/>
+<scope id="0x43" parent="0x0"/>
+<scope id="0x44" parent="0x0"/>
+<scope id="0x45" parent="0x0"/>
+<scope id="0x46" parent="0x0"/>
+<scope id="0x47" parent="0x0"/>
+<scope id="0x48" parent="0x0"/>
+<scope id="0x49" parent="0x0"/>
+<scope id="0x4a" parent="0x0"/>
+<scope id="0x4b" parent="0x0"/>
+<scope id="0x4c" parent="0x0"/>
+<scope id="0x4d" parent="0x0"/>
+<scope id="0x4e" parent="0x0"/>
+<scope id="0x4f" parent="0x0"/>
+<subtable_sym_head name="instruction" id="0x0" scope="0x0"/>
+<start_sym_head name="inst_start" id="0x1" scope="0x0"/>
+<end_sym_head name="inst_next" id="0x2" scope="0x0"/>
+<varnode_sym_head name="R0" id="0x3" scope="0x0"/>
+<varnode_sym_head name="R1" id="0x4" scope="0x0"/>
+<varnode_sym_head name="R2" id="0x5" scope="0x0"/>
+<varnode_sym_head name="R3" id="0x6" scope="0x0"/>
+<varnode_sym_head name="R4" id="0x7" scope="0x0"/>
+<varnode_sym_head name="R5" id="0x8" scope="0x0"/>
+<varnode_sym_head name="R6" id="0x9" scope="0x0"/>
+<varnode_sym_head name="R7" id="0xa" scope="0x0"/>
+<varnode_sym_head name="R8" id="0xb" scope="0x0"/>
+<varnode_sym_head name="R9" id="0xc" scope="0x0"/>
+<varnode_sym_head name="R10" id="0xd" scope="0x0"/>
+<varnode_sym_head name="R11" id="0xe" scope="0x0"/>
+<varnode_sym_head name="R12_L" id="0xf" scope="0x0"/>
+<varnode_sym_head name="R12_H" id="0x10" scope="0x0"/>
+<varnode_sym_head name="R13_L" id="0x11" scope="0x0"/>
+<varnode_sym_head name="R13_H" id="0x12" scope="0x0"/>
+<varnode_sym_head name="RA_L" id="0x13" scope="0x0"/>
+<varnode_sym_head name="RA_H" id="0x14" scope="0x0"/>
+<varnode_sym_head name="SP_L" id="0x15" scope="0x0"/>
+<value_sym_head name="b0" id="0x16" scope="0x0"/>
+<value_sym_head name="op1" id="0x17" scope="0x0"/>
+<value_sym_head name="op2" id="0x18" scope="0x0"/>
+<value_sym_head name="opcode1" id="0x19" scope="0x0"/>
+<value_sym_head name="i" id="0x1a" scope="0x0"/>
+<value_sym_head name="opcode2" id="0x1b" scope="0x0"/>
+<value_sym_head name="op1_b02" id="0x1c" scope="0x0"/>
+<value_sym_head name="op1_b12" id="0x1d" scope="0x0"/>
+<value_sym_head name="op2_b23" id="0x1e" scope="0x0"/>
+<value_sym_head name="op2_b12" id="0x1f" scope="0x0"/>
+<value_sym_head name="opcode1_b23" id="0x20" scope="0x0"/>
+<value_sym_head name="opcode1_b13" id="0x21" scope="0x0"/>
+<operand_sym_head name="i" id="0x22" scope="0x1"/>
+<operand_sym_head name="op2" id="0x23" scope="0x1"/>
+<operand_sym_head name="op1" id="0x24" scope="0x1"/>
+<operand_sym_head name="i" id="0x25" scope="0x2"/>
+<operand_sym_head name="op2" id="0x26" scope="0x2"/>
+<operand_sym_head name="op1" id="0x27" scope="0x2"/>
+<operand_sym_head name="b0" id="0x28" scope="0x2"/>
+<operand_sym_head name="op2" id="0x29" scope="0x3"/>
+<operand_sym_head name="op1" id="0x2a" scope="0x3"/>
+<operand_sym_head name="op2" id="0x2b" scope="0x4"/>
+<operand_sym_head name="op1" id="0x2c" scope="0x4"/>
+<operand_sym_head name="op2" id="0x2d" scope="0x5"/>
+<operand_sym_head name="op1" id="0x2e" scope="0x5"/>
+<operand_sym_head name="i" id="0x2f" scope="0x6"/>
+<operand_sym_head name="op2" id="0x30" scope="0x6"/>
+<operand_sym_head name="op1" id="0x31" scope="0x6"/>
+<operand_sym_head name="i" id="0x32" scope="0x7"/>
+<operand_sym_head name="op2" id="0x33" scope="0x7"/>
+<operand_sym_head name="op1" id="0x34" scope="0x7"/>
+<operand_sym_head name="b0" id="0x35" scope="0x7"/>
+<operand_sym_head name="i" id="0x36" scope="0x8"/>
+<operand_sym_head name="op2" id="0x37" scope="0x8"/>
+<operand_sym_head name="op1" id="0x38" scope="0x8"/>
+<operand_sym_head name="i" id="0x39" scope="0x9"/>
+<operand_sym_head name="op2" id="0x3a" scope="0x9"/>
+<operand_sym_head name="op1" id="0x3b" scope="0x9"/>
+<operand_sym_head name="b0" id="0x3c" scope="0x9"/>
+<operand_sym_head name="i" id="0x3d" scope="0xa"/>
+<operand_sym_head name="op2" id="0x3e" scope="0xa"/>
+<operand_sym_head name="op1" id="0x3f" scope="0xa"/>
+<operand_sym_head name="i" id="0x40" scope="0xb"/>
+<operand_sym_head name="op2" id="0x41" scope="0xb"/>
+<operand_sym_head name="op1" id="0x42" scope="0xb"/>
+<operand_sym_head name="b0" id="0x43" scope="0xb"/>
+<operand_sym_head name="i" id="0x44" scope="0xc"/>
+<operand_sym_head name="op2" id="0x45" scope="0xc"/>
+<operand_sym_head name="op1" id="0x46" scope="0xc"/>
+<operand_sym_head name="i" id="0x47" scope="0xd"/>
+<operand_sym_head name="op2" id="0x48" scope="0xd"/>
+<operand_sym_head name="op1" id="0x49" scope="0xd"/>
+<operand_sym_head name="b0" id="0x4a" scope="0xd"/>
+<operand_sym_head name="op2" id="0x4b" scope="0xe"/>
+<operand_sym_head name="op1" id="0x4c" scope="0xe"/>
+<operand_sym_head name="op2" id="0x4d" scope="0xf"/>
+<operand_sym_head name="op1" id="0x4e" scope="0xf"/>
+<operand_sym_head name="op2" id="0x4f" scope="0x10"/>
+<operand_sym_head name="i" id="0x50" scope="0x11"/>
+<operand_sym_head name="op2" id="0x51" scope="0x11"/>
+<operand_sym_head name="op1" id="0x52" scope="0x11"/>
+<operand_sym_head name="i" id="0x53" scope="0x12"/>
+<operand_sym_head name="op2" id="0x54" scope="0x12"/>
+<operand_sym_head name="op1" id="0x55" scope="0x12"/>
+<operand_sym_head name="b0" id="0x56" scope="0x12"/>
+<operand_sym_head name="i" id="0x57" scope="0x13"/>
+<operand_sym_head name="op2" id="0x58" scope="0x13"/>
+<operand_sym_head name="op1" id="0x59" scope="0x13"/>
+<operand_sym_head name="i" id="0x5a" scope="0x14"/>
+<operand_sym_head name="op2" id="0x5b" scope="0x14"/>
+<operand_sym_head name="op1" id="0x5c" scope="0x14"/>
+<operand_sym_head name="b0" id="0x5d" scope="0x14"/>
+<operand_sym_head name="i" id="0x5e" scope="0x15"/>
+<operand_sym_head name="op2" id="0x5f" scope="0x15"/>
+<operand_sym_head name="op1" id="0x60" scope="0x15"/>
+<operand_sym_head name="i" id="0x61" scope="0x16"/>
+<operand_sym_head name="op2" id="0x62" scope="0x16"/>
+<operand_sym_head name="op1" id="0x63" scope="0x16"/>
+<operand_sym_head name="b0" id="0x64" scope="0x16"/>
+<operand_sym_head name="i" id="0x65" scope="0x17"/>
+<operand_sym_head name="op1" id="0x66" scope="0x17"/>
+<operand_sym_head name="i" id="0x67" scope="0x18"/>
+<operand_sym_head name="op1" id="0x68" scope="0x18"/>
+<operand_sym_head name="i" id="0x69" scope="0x19"/>
+<operand_sym_head name="op1" id="0x6a" scope="0x19"/>
+<operand_sym_head name="i" id="0x6b" scope="0x1a"/>
+<operand_sym_head name="op1" id="0x6c" scope="0x1a"/>
+<operand_sym_head name="i" id="0x6d" scope="0x1b"/>
+<operand_sym_head name="op2" id="0x6e" scope="0x1b"/>
+<operand_sym_head name="op1" id="0x6f" scope="0x1b"/>
+<operand_sym_head name="i" id="0x70" scope="0x1c"/>
+<operand_sym_head name="op2" id="0x71" scope="0x1c"/>
+<operand_sym_head name="op1" id="0x72" scope="0x1c"/>
+<operand_sym_head name="b0" id="0x73" scope="0x1c"/>
+<operand_sym_head name="i" id="0x74" scope="0x1d"/>
+<operand_sym_head name="op2" id="0x75" scope="0x1d"/>
+<operand_sym_head name="op1" id="0x76" scope="0x1d"/>
+<operand_sym_head name="i" id="0x77" scope="0x1e"/>
+<operand_sym_head name="op2" id="0x78" scope="0x1e"/>
+<operand_sym_head name="op1" id="0x79" scope="0x1e"/>
+<operand_sym_head name="b0" id="0x7a" scope="0x1e"/>
+<operand_sym_head name="i" id="0x7b" scope="0x1f"/>
+<operand_sym_head name="op2" id="0x7c" scope="0x1f"/>
+<operand_sym_head name="op1" id="0x7d" scope="0x1f"/>
+<operand_sym_head name="i" id="0x7e" scope="0x20"/>
+<operand_sym_head name="op2" id="0x7f" scope="0x20"/>
+<operand_sym_head name="op1" id="0x80" scope="0x20"/>
+<operand_sym_head name="i" id="0x81" scope="0x21"/>
+<operand_sym_head name="op2" id="0x82" scope="0x21"/>
+<operand_sym_head name="op1" id="0x83" scope="0x21"/>
+<operand_sym_head name="b0" id="0x84" scope="0x21"/>
+<operand_sym_head name="i" id="0x85" scope="0x22"/>
+<operand_sym_head name="op2" id="0x86" scope="0x22"/>
+<operand_sym_head name="op1" id="0x87" scope="0x22"/>
+<operand_sym_head name="i" id="0x88" scope="0x23"/>
+<operand_sym_head name="op2" id="0x89" scope="0x23"/>
+<operand_sym_head name="op1" id="0x8a" scope="0x23"/>
+<operand_sym_head name="b0" id="0x8b" scope="0x23"/>
+<operand_sym_head name="i" id="0x8c" scope="0x24"/>
+<operand_sym_head name="op2" id="0x8d" scope="0x24"/>
+<operand_sym_head name="op1" id="0x8e" scope="0x24"/>
+<operand_sym_head name="i" id="0x8f" scope="0x25"/>
+<operand_sym_head name="op2" id="0x90" scope="0x25"/>
+<operand_sym_head name="op1" id="0x91" scope="0x25"/>
+<operand_sym_head name="b0" id="0x92" scope="0x25"/>
+<operand_sym_head name="op2" id="0x93" scope="0x26"/>
+<operand_sym_head name="op1" id="0x94" scope="0x26"/>
+<operand_sym_head name="op2" id="0x95" scope="0x27"/>
+<operand_sym_head name="op1" id="0x96" scope="0x27"/>
+<operand_sym_head name="b0" id="0x97" scope="0x27"/>
+<operand_sym_head name="i" id="0x98" scope="0x28"/>
+<operand_sym_head name="op1" id="0x99" scope="0x28"/>
+<operand_sym_head name="i" id="0x9a" scope="0x29"/>
+<operand_sym_head name="op1" id="0x9b" scope="0x29"/>
+<operand_sym_head name="i" id="0x9c" scope="0x2a"/>
+<operand_sym_head name="op1" id="0x9d" scope="0x2a"/>
+<operand_sym_head name="i" id="0x9e" scope="0x2b"/>
+<operand_sym_head name="op1" id="0x9f" scope="0x2b"/>
+<operand_sym_head name="i" id="0xa0" scope="0x2c"/>
+<operand_sym_head name="op1" id="0xa1" scope="0x2c"/>
+<operand_sym_head name="i" id="0xa2" scope="0x2d"/>
+<operand_sym_head name="op1" id="0xa3" scope="0x2d"/>
+<operand_sym_head name="i" id="0xa4" scope="0x2e"/>
+<operand_sym_head name="op1" id="0xa5" scope="0x2e"/>
+<operand_sym_head name="i" id="0xa6" scope="0x2f"/>
+<operand_sym_head name="op1" id="0xa7" scope="0x2f"/>
+<operand_sym_head name="i" id="0xa8" scope="0x30"/>
+<operand_sym_head name="op1" id="0xa9" scope="0x30"/>
+<operand_sym_head name="op2" id="0xaa" scope="0x31"/>
+<operand_sym_head name="op1" id="0xab" scope="0x31"/>
+<operand_sym_head name="op2" id="0xac" scope="0x32"/>
+<operand_sym_head name="op1" id="0xad" scope="0x32"/>
+<operand_sym_head name="opcode1" id="0xae" scope="0x33"/>
+<operand_sym_head name="op2" id="0xaf" scope="0x33"/>
+<operand_sym_head name="op1" id="0xb0" scope="0x33"/>
+<operand_sym_head name="op2" id="0xb1" scope="0x34"/>
+<operand_sym_head name="op2" id="0xb2" scope="0x35"/>
+<operand_sym_head name="op1" id="0xb3" scope="0x35"/>
+<operand_sym_head name="op2" id="0xb4" scope="0x36"/>
+<operand_sym_head name="op2" id="0xb5" scope="0x37"/>
+<operand_sym_head name="op1" id="0xb6" scope="0x37"/>
+<operand_sym_head name="opcode1" id="0xb7" scope="0x38"/>
+<operand_sym_head name="op1" id="0xb8" scope="0x38"/>
+<operand_sym_head name="op1" id="0xb9" scope="0x39"/>
+<operand_sym_head name="op1" id="0xba" scope="0x3a"/>
+<operand_sym_head name="op2" id="0xbb" scope="0x3b"/>
+<operand_sym_head name="op1" id="0xbc" scope="0x3b"/>
+<operand_sym_head name="op2" id="0xbd" scope="0x3c"/>
+<operand_sym_head name="op1" id="0xbe" scope="0x3c"/>
+<operand_sym_head name="op2" id="0xbf" scope="0x3d"/>
+<operand_sym_head name="op1" id="0xc0" scope="0x3d"/>
+<operand_sym_head name="op2" id="0xc1" scope="0x3e"/>
+<operand_sym_head name="op1" id="0xc2" scope="0x3e"/>
+<operand_sym_head name="op1" id="0xc3" scope="0x3f"/>
+<operand_sym_head name="op1" id="0xc4" scope="0x40"/>
+<operand_sym_head name="op1" id="0xc5" scope="0x41"/>
+<operand_sym_head name="op1" id="0xc6" scope="0x42"/>
+<operand_sym_head name="op1" id="0xc7" scope="0x43"/>
+<operand_sym_head name="op1" id="0xc8" scope="0x44"/>
+<operand_sym_head name="i" id="0xc9" scope="0x45"/>
+<operand_sym_head name="opcode1" id="0xca" scope="0x45"/>
+<operand_sym_head name="op2" id="0xcb" scope="0x45"/>
+<operand_sym_head name="op1" id="0xcc" scope="0x45"/>
+<operand_sym_head name="b0" id="0xcd" scope="0x45"/>
+<operand_sym_head name="i" id="0xce" scope="0x46"/>
+<operand_sym_head name="op2" id="0xcf" scope="0x46"/>
+<operand_sym_head name="op1" id="0xd0" scope="0x46"/>
+<operand_sym_head name="i" id="0xd1" scope="0x47"/>
+<operand_sym_head name="op2" id="0xd2" scope="0x47"/>
+<operand_sym_head name="op1" id="0xd3" scope="0x47"/>
+<operand_sym_head name="i" id="0xd4" scope="0x48"/>
+<operand_sym_head name="op2" id="0xd5" scope="0x48"/>
+<operand_sym_head name="i" id="0xd6" scope="0x49"/>
+<operand_sym_head name="opcode1" id="0xd7" scope="0x49"/>
+<operand_sym_head name="op2" id="0xd8" scope="0x49"/>
+<operand_sym_head name="op1" id="0xd9" scope="0x49"/>
+<operand_sym_head name="b0" id="0xda" scope="0x49"/>
+<operand_sym_head name="i" id="0xdb" scope="0x4a"/>
+<operand_sym_head name="op2" id="0xdc" scope="0x4a"/>
+<operand_sym_head name="op1" id="0xdd" scope="0x4a"/>
+<operand_sym_head name="i" id="0xde" scope="0x4b"/>
+<operand_sym_head name="op2" id="0xdf" scope="0x4b"/>
+<operand_sym_head name="op1" id="0xe0" scope="0x4b"/>
+<operand_sym_head name="i" id="0xe1" scope="0x4c"/>
+<operand_sym_head name="op2" id="0xe2" scope="0x4c"/>
+<operand_sym_head name="i" id="0xe3" scope="0x4d"/>
+<operand_sym_head name="op1" id="0xe4" scope="0x4d"/>
+<operand_sym_head name="i" id="0xe5" scope="0x4e"/>
+<operand_sym_head name="op1" id="0xe6" scope="0x4e"/>
+<operand_sym_head name="i" id="0xe7" scope="0x4f"/>
+<operand_sym_head name="op1" id="0xe8" scope="0x4f"/>
+<subtable_sym name="instruction" id="0x0" scope="0x0" numct="88">
+<constructor parent="0x0" first="1" length="2" line="69">
+<oper id="0x22"/>
+<oper id="0x23"/>
+<oper id="0x24"/>
+<print piece="MOV"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="72">
+<oper id="0x25"/>
+<oper id="0x26"/>
+<oper id="0x27"/>
+<oper id="0x28"/>
+<print piece="MOV"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="76">
+<oper id="0x29"/>
+<oper id="0x2a"/>
+<print piece="MOVXB"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="79">
+<oper id="0x2b"/>
+<oper id="0x2c"/>
+<print piece="MOVZB"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="82">
+<oper id="0x2d"/>
+<oper id="0x2e"/>
+<print piece="MOVD"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="89">
+<oper id="0x2f"/>
+<oper id="0x30"/>
+<oper id="0x31"/>
+<print piece="ADD"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="92">
+<oper id="0x32"/>
+<oper id="0x33"/>
+<oper id="0x34"/>
+<oper id="0x35"/>
+<print piece="ADD"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="96">
+<oper id="0x36"/>
+<oper id="0x37"/>
+<oper id="0x38"/>
+<print piece="ADDU"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="99">
+<oper id="0x39"/>
+<oper id="0x3a"/>
+<oper id="0x3b"/>
+<oper id="0x3c"/>
+<print piece="ADDU"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="103">
+<oper id="0x3d"/>
+<oper id="0x3e"/>
+<oper id="0x3f"/>
+<print piece="ADDC"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="106">
+<oper id="0x40"/>
+<oper id="0x41"/>
+<oper id="0x42"/>
+<oper id="0x43"/>
+<print piece="ADDC"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="111">
+<oper id="0x44"/>
+<oper id="0x45"/>
+<oper id="0x46"/>
+<print piece="MUL"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="114">
+<oper id="0x47"/>
+<oper id="0x48"/>
+<oper id="0x49"/>
+<oper id="0x4a"/>
+<print piece="MUL"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="118">
+<oper id="0x4b"/>
+<oper id="0x4c"/>
+<print piece="MULSB"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="121">
+<oper id="0x4d"/>
+<oper id="0x4e"/>
+<print piece="MULSW"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="124">
+<oper id="0x4f"/>
+<print piece="MULUW"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="128">
+<oper id="0x50"/>
+<oper id="0x51"/>
+<oper id="0x52"/>
+<print piece="SUB"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="131">
+<oper id="0x53"/>
+<oper id="0x54"/>
+<oper id="0x55"/>
+<oper id="0x56"/>
+<print piece="SUB"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="135">
+<oper id="0x57"/>
+<oper id="0x58"/>
+<oper id="0x59"/>
+<print piece="SUBC"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="138">
+<oper id="0x5a"/>
+<oper id="0x5b"/>
+<oper id="0x5c"/>
+<oper id="0x5d"/>
+<print piece="SUBC"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="145">
+<oper id="0x5e"/>
+<oper id="0x5f"/>
+<oper id="0x60"/>
+<print piece="CMP"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="148">
+<oper id="0x61"/>
+<oper id="0x62"/>
+<oper id="0x63"/>
+<oper id="0x64"/>
+<print piece="CMP"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="152">
+<oper id="0x65"/>
+<oper id="0x66"/>
+<print piece="BEQ0"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="156">
+<oper id="0x67"/>
+<oper id="0x68"/>
+<print piece="BEQ1"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="160">
+<oper id="0x69"/>
+<oper id="0x6a"/>
+<print piece="BNE0"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="164">
+<oper id="0x6b"/>
+<oper id="0x6c"/>
+<print piece="BNE1"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="171">
+<oper id="0x6d"/>
+<oper id="0x6e"/>
+<oper id="0x6f"/>
+<print piece="AND"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="174">
+<oper id="0x70"/>
+<oper id="0x71"/>
+<oper id="0x72"/>
+<oper id="0x73"/>
+<print piece="AND"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="178">
+<oper id="0x74"/>
+<oper id="0x75"/>
+<oper id="0x76"/>
+<print piece="OR"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="181">
+<oper id="0x77"/>
+<oper id="0x78"/>
+<oper id="0x79"/>
+<oper id="0x7a"/>
+<print piece="OR"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="185">
+<oper id="0x7b"/>
+<oper id="0x7c"/>
+<oper id="0x7d"/>
+<print piece="S"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="189">
+<oper id="0x7e"/>
+<oper id="0x7f"/>
+<oper id="0x80"/>
+<print piece="XOR"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="192">
+<oper id="0x81"/>
+<oper id="0x82"/>
+<oper id="0x83"/>
+<oper id="0x84"/>
+<print piece="XOR"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="197">
+<oper id="0x85"/>
+<oper id="0x86"/>
+<oper id="0x87"/>
+<print piece="ASHU"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="200">
+<oper id="0x88"/>
+<oper id="0x89"/>
+<oper id="0x8a"/>
+<oper id="0x8b"/>
+<print piece="ASHU"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="204">
+<oper id="0x8c"/>
+<oper id="0x8d"/>
+<oper id="0x8e"/>
+<print piece="LSH"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="207">
+<oper id="0x8f"/>
+<oper id="0x90"/>
+<oper id="0x91"/>
+<oper id="0x92"/>
+<print piece="LSH"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="212">
+<oper id="0x93"/>
+<oper id="0x94"/>
+<print piece="TBIT"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="215">
+<oper id="0x95"/>
+<oper id="0x96"/>
+<oper id="0x97"/>
+<print piece="TBIT"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="219">
+<oper id="0x98"/>
+<oper id="0x99"/>
+<print piece="TBIT"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="222">
+<oper id="0x9a"/>
+<oper id="0x9b"/>
+<print piece="TBIT"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="225">
+<oper id="0x9c"/>
+<oper id="0x9d"/>
+<print piece="TBIT"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="229">
+<oper id="0x9e"/>
+<oper id="0x9f"/>
+<print piece="CBIT"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="232">
+<oper id="0xa0"/>
+<oper id="0xa1"/>
+<print piece="CBIT"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="235">
+<oper id="0xa2"/>
+<oper id="0xa3"/>
+<print piece="CBIT"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="239">
+<oper id="0xa4"/>
+<oper id="0xa5"/>
+<print piece="SBIT"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="242">
+<oper id="0xa6"/>
+<oper id="0xa7"/>
+<print piece="SBIT"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="245">
+<oper id="0xa8"/>
+<oper id="0xa9"/>
+<print piece="SBIT"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="250">
+<oper id="0xaa"/>
+<oper id="0xab"/>
+<print piece="LPR"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="253">
+<oper id="0xac"/>
+<oper id="0xad"/>
+<print piece="SPR"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="258">
+<oper id="0xae"/>
+<oper id="0xaf"/>
+<oper id="0xb0"/>
+<print piece="Bcond"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="261">
+<oper id="0xb1"/>
+<print piece="Bcond"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="264">
+<oper id="0xb2"/>
+<oper id="0xb3"/>
+<print piece="Bcond"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="268">
+<oper id="0xb4"/>
+<print piece="BAL"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="271">
+<oper id="0xb5"/>
+<oper id="0xb6"/>
+<print piece="BAL"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="275">
+<oper id="0xb7"/>
+<oper id="0xb8"/>
+<print piece="BR"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="278">
+<print piece="BR"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="281">
+<oper id="0xb9"/>
+<print piece="BR"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="285">
+<oper id="0xba"/>
+<print piece="EXCP"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="289">
+<oper id="0xbb"/>
+<oper id="0xbc"/>
+<print piece="Jcond"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="292">
+<oper id="0xbd"/>
+<oper id="0xbe"/>
+<print piece="Jcond"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="296">
+<oper id="0xbf"/>
+<oper id="0xc0"/>
+<print piece="JAL"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="299">
+<oper id="0xc1"/>
+<oper id="0xc2"/>
+<print piece="JAL"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="303">
+<oper id="0xc3"/>
+<print piece="JUMP"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="306">
+<oper id="0xc4"/>
+<print piece="JUMP"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="310">
+<print piece="RETX"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="314">
+<oper id="0xc5"/>
+<print piece="PUSH"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="318">
+<oper id="0xc6"/>
+<print piece="POP"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="322">
+<oper id="0xc7"/>
+<print piece="POPRET"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="326">
+<oper id="0xc8"/>
+<print piece="POPRET"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="333">
+<oper id="0xc9"/>
+<oper id="0xca"/>
+<oper id="0xcb"/>
+<oper id="0xcc"/>
+<oper id="0xcd"/>
+<print piece="LOAD"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="336">
+<oper id="0xce"/>
+<oper id="0xcf"/>
+<oper id="0xd0"/>
+<print piece="LOAD"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="339">
+<oper id="0xd1"/>
+<oper id="0xd2"/>
+<oper id="0xd3"/>
+<print piece="LOAD"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="342">
+<oper id="0xd4"/>
+<oper id="0xd5"/>
+<print piece="LOAD"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="346">
+<print piece="LOADM"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="350">
+<oper id="0xd6"/>
+<oper id="0xd7"/>
+<oper id="0xd8"/>
+<oper id="0xd9"/>
+<oper id="0xda"/>
+<print piece="STORE"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="353">
+<oper id="0xdb"/>
+<oper id="0xdc"/>
+<oper id="0xdd"/>
+<print piece="STORE"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="356">
+<oper id="0xde"/>
+<oper id="0xdf"/>
+<oper id="0xe0"/>
+<print piece="STORE"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="359">
+<oper id="0xe1"/>
+<oper id="0xe2"/>
+<print piece="STORE"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="362">
+<oper id="0xe3"/>
+<oper id="0xe4"/>
+<print piece="STORE"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="365">
+<oper id="0xe5"/>
+<oper id="0xe6"/>
+<print piece="STORE"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="368">
+<oper id="0xe7"/>
+<oper id="0xe8"/>
+<print piece="STORE"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="372">
+<print piece="STORM"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="379">
+<print piece="DI"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="382">
+<print piece="EI"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="385">
+<print piece="NOP"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="388">
+<print piece="WAIT"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="391">
+<print piece="EIWAIT"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<decision number="88" context="false" start="8" size="2">
+<decision number="33" context="false" start="11" size="4">
+<decision number="1" context="false" start="0" size="0">
+<pair id="6">
+<instruct_pat>
+<pat_block offset="1" nonzero="1">
+  <mask_word mask="0xde000000" val="0x0"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="2" context="false" start="0" size="0">
+<pair id="85">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xffff0000" val="0x20000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="8">
+<instruct_pat>
+<pat_block offset="1" nonzero="1">
+  <mask_word mask="0xde000000" val="0x2000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="8" context="false" start="0" size="2">
+<decision number="2" context="false" start="7" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="44">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xc1de0000" val="0x40000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="43">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xc1de0000" val="0x1040000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="2" context="false" start="7" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="47">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xc1de0000" val="0x40040000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="46">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xc1de0000" val="0x41040000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="2" context="false" start="7" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="41">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xc1de0000" val="0x80040000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="40">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xc1de0000" val="0x81040000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="2" context="false" start="7" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="81">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xc1de0000" val="0xc0040000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="80">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xc1de0000" val="0xc1040000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="12">
+<instruct_pat>
+<pat_block offset="1" nonzero="1">
+  <mask_word mask="0xde000000" val="0x6000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="34">
+<instruct_pat>
+<pat_block offset="1" nonzero="1">
+  <mask_word mask="0xde000000" val="0x8000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="36">
+<instruct_pat>
+<pat_block offset="1" nonzero="1">
+  <mask_word mask="0xde000000" val="0xa000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="32">
+<instruct_pat>
+<pat_block offset="1" nonzero="1">
+  <mask_word mask="0xde000000" val="0xc000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="21">
+<instruct_pat>
+<pat_block offset="1" nonzero="1">
+  <mask_word mask="0xde000000" val="0xe000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="27">
+<instruct_pat>
+<pat_block offset="1" nonzero="1">
+  <mask_word mask="0xde000000" val="0x10000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="10">
+<instruct_pat>
+<pat_block offset="1" nonzero="1">
+  <mask_word mask="0xde000000" val="0x12000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="7" context="false" start="7" size="1">
+<decision number="3" context="false" start="10" size="1">
+<decision number="2" context="false" start="0" size="0">
+<pair id="56">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xefff0000" val="0xce150000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="51">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xffe0000" val="0xe140000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="53">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xffe0000" val="0xe340000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="4" context="false" start="0" size="2">
+<decision number="1" context="false" start="0" size="0">
+<pair id="22">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xc1de0000" val="0x1140000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="23">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xc1de0000" val="0x41140000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="24">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xc1de0000" val="0x81140000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="25">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xc1de0000" val="0xc1140000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+</decision>
+<decision number="4" context="false" start="10" size="1">
+<decision number="3" context="false" start="7" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="62">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1fe0000" val="0x160000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="2" context="false" start="0" size="0">
+<pair id="64">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xe1ff0000" val="0xc1170000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="60">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1fe0000" val="0x1160000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="38">
+<instruct_pat>
+<pat_block offset="1" nonzero="1">
+  <mask_word mask="0xfe000000" val="0x36000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="1">
+<instruct_pat>
+<pat_block offset="1" nonzero="1">
+  <mask_word mask="0xde000000" val="0x18000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="19">
+<instruct_pat>
+<pat_block offset="1" nonzero="1">
+  <mask_word mask="0xde000000" val="0x1a000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="29">
+<instruct_pat>
+<pat_block offset="1" nonzero="1">
+  <mask_word mask="0xde000000" val="0x1c000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="17">
+<instruct_pat>
+<pat_block offset="1" nonzero="1">
+  <mask_word mask="0xde000000" val="0x1e000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="47" context="false" start="7" size="1">
+<decision number="26" context="false" start="10" size="1">
+<decision number="3" context="false" start="0" size="0">
+<pair id="30">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1de0000" val="0x4e0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="55">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xe1e10000" val="0xc0410000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="50">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1e00000" val="0x400000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="24" context="false" start="11" size="3">
+<decision number="2" context="false" start="14" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="13">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1fe0000" val="0x600000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="14">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1fe0000" val="0x620000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="4">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1fc0000" val="0x640000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="2" context="false" start="14" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="2">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1fe0000" val="0x680000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="3">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1fe0000" val="0x6a0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="5" context="false" start="14" size="1">
+<decision number="4" context="false" start="0" size="1">
+<decision number="2" context="false" start="15" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="66">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x81ff0000" val="0x6c0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="68">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x81ff0000" val="0x6d0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="2" context="false" start="15" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="67">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x81ff0000" val="0x806c0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="69">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x81ff0000" val="0x806d0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="30">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1de0000" val="0x4e0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="2" context="false" start="14" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="48">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1fe0000" val="0x700000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="49">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1fe0000" val="0x720000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="3" context="false" start="14" size="1">
+<decision number="2" context="false" start="0" size="0">
+<pair id="57">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xe1ff0000" val="0xc0750000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="52">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1fe0000" val="0x740000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="54">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1fe0000" val="0x760000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="2" context="false" start="14" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="65">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xffff0000" val="0xfe790000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="58">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xe1ff0000" val="0xe07b0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="7" context="false" start="4" size="2">
+<decision number="1" context="false" start="0" size="0">
+<pair id="15">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xdfe0000" val="0x7e0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="3" context="false" start="0" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="74">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x9fff0000" val="0x47e0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="2" context="false" start="6" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="82">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x9fff0000" val="0x847e0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="87">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xffff0000" val="0xe67f0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="3" context="false" start="2" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="83">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xffff0000" val="0xde7d0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="2" context="false" start="14" size="1">
+<decision number="1" context="false" start="0" size="0">
+<pair id="84">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xffff0000" val="0xfe7d0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="86">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xffff0000" val="0xfe7f0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+</decision>
+</decision>
+</decision>
+</decision>
+<decision number="21" context="false" start="11" size="4">
+<decision number="1" context="false" start="0" size="0">
+<pair id="5">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1de0000" val="0x1400000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="7">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1de0000" val="0x1420000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="4" context="false" start="0" size="2">
+<decision number="1" context="false" start="0" size="0">
+<pair id="42">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xc1de0000" val="0x1440000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="45">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xc1de0000" val="0x41440000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="39">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xc1de0000" val="0x81440000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="79">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xc1de0000" val="0xc1440000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="11">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1de0000" val="0x1460000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="33">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1de0000" val="0x1480000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="35">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1de0000" val="0x14a0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="31">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1de0000" val="0x14c0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="20">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1de0000" val="0x14e0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="26">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1de0000" val="0x1500000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="9">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1de0000" val="0x1520000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="3" context="false" start="10" size="1">
+<decision number="2" context="false" start="0" size="0">
+<pair id="63">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0xe1ff0000" val="0xc1550000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="59">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1fe0000" val="0x1540000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="61">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1fe0000" val="0x1740000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="37">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1fe0000" val="0x1760000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="0">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1de0000" val="0x1580000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="18">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1de0000" val="0x15a0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="28">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1de0000" val="0x15c0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="16">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1de0000" val="0x15e0000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+</decision>
+<decision number="4" context="false" start="12" size="1">
+<decision number="2" context="false" start="0" size="0">
+<pair id="71">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1d80000" val="0x1900000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="70">
+<instruct_pat>
+<pat_block offset="1" nonzero="1">
+  <mask_word mask="0xc0000000" val="0x80000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="3" context="false" start="0" size="0">
+<pair id="73">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1fd80000" val="0x1f980000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="72">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1d80000" val="0x1980000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="70">
+<instruct_pat>
+<pat_block offset="1" nonzero="1">
+  <mask_word mask="0xc0000000" val="0x80000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+<decision number="4" context="false" start="12" size="1">
+<decision number="2" context="false" start="0" size="0">
+<pair id="76">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1d80000" val="0x1d00000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="75">
+<instruct_pat>
+<pat_block offset="1" nonzero="1">
+  <mask_word mask="0xc0000000" val="0xc0000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="3" context="false" start="0" size="0">
+<pair id="78">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1fd80000" val="0x1fd80000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="77">
+<instruct_pat>
+<pat_block offset="0" nonzero="2">
+  <mask_word mask="0x1d80000" val="0x1d80000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+<pair id="75">
+<instruct_pat>
+<pat_block offset="1" nonzero="1">
+  <mask_word mask="0xc0000000" val="0xc0000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</decision>
+</decision>
+</subtable_sym>
+<start_sym name="inst_start" id="0x1" scope="0x0"/>
+<end_sym name="inst_next" id="0x2" scope="0x0"/>
+<varnode_sym name="R0" id="0x3" scope="0x0" space="register" offset="0x0" size="2">
+</varnode_sym>
+<varnode_sym name="R1" id="0x4" scope="0x0" space="register" offset="0x2" size="2">
+</varnode_sym>
+<varnode_sym name="R2" id="0x5" scope="0x0" space="register" offset="0x4" size="2">
+</varnode_sym>
+<varnode_sym name="R3" id="0x6" scope="0x0" space="register" offset="0x6" size="2">
+</varnode_sym>
+<varnode_sym name="R4" id="0x7" scope="0x0" space="register" offset="0x8" size="2">
+</varnode_sym>
+<varnode_sym name="R5" id="0x8" scope="0x0" space="register" offset="0xa" size="2">
+</varnode_sym>
+<varnode_sym name="R6" id="0x9" scope="0x0" space="register" offset="0xc" size="2">
+</varnode_sym>
+<varnode_sym name="R7" id="0xa" scope="0x0" space="register" offset="0xe" size="2">
+</varnode_sym>
+<varnode_sym name="R8" id="0xb" scope="0x0" space="register" offset="0x10" size="2">
+</varnode_sym>
+<varnode_sym name="R9" id="0xc" scope="0x0" space="register" offset="0x12" size="2">
+</varnode_sym>
+<varnode_sym name="R10" id="0xd" scope="0x0" space="register" offset="0x14" size="2">
+</varnode_sym>
+<varnode_sym name="R11" id="0xe" scope="0x0" space="register" offset="0x16" size="2">
+</varnode_sym>
+<varnode_sym name="R12_L" id="0xf" scope="0x0" space="register" offset="0x18" size="2">
+</varnode_sym>
+<varnode_sym name="R12_H" id="0x10" scope="0x0" space="register" offset="0x1a" size="2">
+</varnode_sym>
+<varnode_sym name="R13_L" id="0x11" scope="0x0" space="register" offset="0x1c" size="2">
+</varnode_sym>
+<varnode_sym name="R13_H" id="0x12" scope="0x0" space="register" offset="0x1e" size="2">
+</varnode_sym>
+<varnode_sym name="RA_L" id="0x13" scope="0x0" space="register" offset="0x20" size="2">
+</varnode_sym>
+<varnode_sym name="RA_H" id="0x14" scope="0x0" space="register" offset="0x22" size="2">
+</varnode_sym>
+<varnode_sym name="SP_L" id="0x15" scope="0x0" space="register" offset="0x24" size="2">
+</varnode_sym>
+<value_sym name="b0" id="0x16" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="0" bytestart="0" byteend="0" shift="0"/>
+</value_sym>
+<value_sym name="op1" id="0x17" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</value_sym>
+<value_sym name="op2" id="0x18" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</value_sym>
+<value_sym name="opcode1" id="0x19" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="9" bitend="12" bytestart="1" byteend="1" shift="1"/>
+</value_sym>
+<value_sym name="i" id="0x1a" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</value_sym>
+<value_sym name="opcode2" id="0x1b" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="14" bitend="15" bytestart="1" byteend="1" shift="6"/>
+</value_sym>
+<value_sym name="op1_b02" id="0x1c" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="3" bytestart="0" byteend="0" shift="1"/>
+</value_sym>
+<value_sym name="op1_b12" id="0x1d" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="2" bitend="3" bytestart="0" byteend="0" shift="2"/>
+</value_sym>
+<value_sym name="op2_b23" id="0x1e" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="7" bitend="8" bytestart="0" byteend="1" shift="7"/>
+</value_sym>
+<value_sym name="op2_b12" id="0x1f" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="6" bitend="7" bytestart="0" byteend="0" shift="6"/>
+</value_sym>
+<value_sym name="opcode1_b23" id="0x20" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="11" bitend="12" bytestart="1" byteend="1" shift="3"/>
+</value_sym>
+<value_sym name="opcode1_b13" id="0x21" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="10" bitend="12" bytestart="1" byteend="1" shift="2"/>
+</value_sym>
+<operand_sym name="i" id="0x22" scope="0x1" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x0"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x23" scope="0x1" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x0"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x24" scope="0x1" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x0"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x25" scope="0x2" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x1"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x26" scope="0x2" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x1"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x27" scope="0x2" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x1"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="b0" id="0x28" scope="0x2" off="0" base="-1" minlen="2" index="3">
+<operand_exp index="3" table="0x0" ct="0x1"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="0" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="op2" id="0x29" scope="0x3" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x2"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x2a" scope="0x3" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x2"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op2" id="0x2b" scope="0x4" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x3"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x2c" scope="0x4" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x3"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op2" id="0x2d" scope="0x5" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x4"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x2e" scope="0x5" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x4"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x2f" scope="0x6" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x5"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x30" scope="0x6" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x5"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x31" scope="0x6" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x5"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x32" scope="0x7" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x6"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x33" scope="0x7" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x6"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x34" scope="0x7" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x6"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="b0" id="0x35" scope="0x7" off="0" base="-1" minlen="2" index="3">
+<operand_exp index="3" table="0x0" ct="0x6"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="0" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="i" id="0x36" scope="0x8" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x7"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x37" scope="0x8" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x7"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x38" scope="0x8" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x7"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x39" scope="0x9" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x8"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x3a" scope="0x9" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x8"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x3b" scope="0x9" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x8"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="b0" id="0x3c" scope="0x9" off="0" base="-1" minlen="2" index="3">
+<operand_exp index="3" table="0x0" ct="0x8"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="0" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="i" id="0x3d" scope="0xa" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x9"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x3e" scope="0xa" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x9"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x3f" scope="0xa" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x9"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x40" scope="0xb" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0xa"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x41" scope="0xb" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0xa"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x42" scope="0xb" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0xa"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="b0" id="0x43" scope="0xb" off="0" base="-1" minlen="2" index="3">
+<operand_exp index="3" table="0x0" ct="0xa"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="0" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="i" id="0x44" scope="0xc" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0xb"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x45" scope="0xc" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0xb"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x46" scope="0xc" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0xb"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x47" scope="0xd" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0xc"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x48" scope="0xd" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0xc"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x49" scope="0xd" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0xc"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="b0" id="0x4a" scope="0xd" off="0" base="-1" minlen="2" index="3">
+<operand_exp index="3" table="0x0" ct="0xc"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="0" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="op2" id="0x4b" scope="0xe" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0xd"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x4c" scope="0xe" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0xd"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op2" id="0x4d" scope="0xf" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0xe"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x4e" scope="0xf" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0xe"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op2" id="0x4f" scope="0x10" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0xf"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="i" id="0x50" scope="0x11" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x10"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x51" scope="0x11" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x10"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x52" scope="0x11" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x10"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x53" scope="0x12" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x11"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x54" scope="0x12" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x11"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x55" scope="0x12" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x11"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="b0" id="0x56" scope="0x12" off="0" base="-1" minlen="2" index="3">
+<operand_exp index="3" table="0x0" ct="0x11"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="0" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="i" id="0x57" scope="0x13" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x12"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x58" scope="0x13" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x12"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x59" scope="0x13" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x12"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x5a" scope="0x14" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x13"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x5b" scope="0x14" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x13"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x5c" scope="0x14" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x13"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="b0" id="0x5d" scope="0x14" off="0" base="-1" minlen="2" index="3">
+<operand_exp index="3" table="0x0" ct="0x13"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="0" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="i" id="0x5e" scope="0x15" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x14"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x5f" scope="0x15" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x14"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x60" scope="0x15" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x14"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x61" scope="0x16" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x15"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x62" scope="0x16" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x15"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x63" scope="0x16" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x15"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="b0" id="0x64" scope="0x16" off="0" base="-1" minlen="2" index="3">
+<operand_exp index="3" table="0x0" ct="0x15"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="0" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="i" id="0x65" scope="0x17" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x16"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x66" scope="0x17" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x16"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x67" scope="0x18" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x17"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x68" scope="0x18" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x17"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x69" scope="0x19" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x18"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x6a" scope="0x19" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x18"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x6b" scope="0x1a" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x19"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x6c" scope="0x1a" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x19"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x6d" scope="0x1b" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x1a"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x6e" scope="0x1b" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x1a"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x6f" scope="0x1b" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x1a"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x70" scope="0x1c" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x1b"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x71" scope="0x1c" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x1b"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x72" scope="0x1c" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x1b"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="b0" id="0x73" scope="0x1c" off="0" base="-1" minlen="2" index="3">
+<operand_exp index="3" table="0x0" ct="0x1b"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="0" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="i" id="0x74" scope="0x1d" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x1c"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x75" scope="0x1d" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x1c"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x76" scope="0x1d" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x1c"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x77" scope="0x1e" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x1d"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x78" scope="0x1e" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x1d"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x79" scope="0x1e" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x1d"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="b0" id="0x7a" scope="0x1e" off="0" base="-1" minlen="2" index="3">
+<operand_exp index="3" table="0x0" ct="0x1d"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="0" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="i" id="0x7b" scope="0x1f" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x1e"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x7c" scope="0x1f" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x1e"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x7d" scope="0x1f" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x1e"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x7e" scope="0x20" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x1f"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x7f" scope="0x20" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x1f"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x80" scope="0x20" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x1f"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x81" scope="0x21" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x20"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x82" scope="0x21" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x20"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x83" scope="0x21" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x20"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="b0" id="0x84" scope="0x21" off="0" base="-1" minlen="2" index="3">
+<operand_exp index="3" table="0x0" ct="0x20"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="0" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="i" id="0x85" scope="0x22" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x21"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x86" scope="0x22" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x21"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x87" scope="0x22" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x21"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x88" scope="0x23" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x22"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x89" scope="0x23" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x22"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x8a" scope="0x23" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x22"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="b0" id="0x8b" scope="0x23" off="0" base="-1" minlen="2" index="3">
+<operand_exp index="3" table="0x0" ct="0x22"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="0" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="i" id="0x8c" scope="0x24" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x23"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x8d" scope="0x24" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x23"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x8e" scope="0x24" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x23"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x8f" scope="0x25" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x24"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0x90" scope="0x25" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x24"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x91" scope="0x25" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x24"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="b0" id="0x92" scope="0x25" off="0" base="-1" minlen="2" index="3">
+<operand_exp index="3" table="0x0" ct="0x24"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="0" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="op2" id="0x93" scope="0x26" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x25"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x94" scope="0x26" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x25"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op2" id="0x95" scope="0x27" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x26"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x96" scope="0x27" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x26"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="b0" id="0x97" scope="0x27" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x26"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="0" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="i" id="0x98" scope="0x28" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x27"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x99" scope="0x28" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x27"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x9a" scope="0x29" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x28"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x9b" scope="0x29" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x28"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x9c" scope="0x2a" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x29"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x9d" scope="0x2a" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x29"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0x9e" scope="0x2b" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x2a"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0x9f" scope="0x2b" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x2a"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0xa0" scope="0x2c" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x2b"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xa1" scope="0x2c" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x2b"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0xa2" scope="0x2d" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x2c"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xa3" scope="0x2d" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x2c"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0xa4" scope="0x2e" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x2d"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xa5" scope="0x2e" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x2d"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0xa6" scope="0x2f" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x2e"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xa7" scope="0x2f" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x2e"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0xa8" scope="0x30" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x2f"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xa9" scope="0x30" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x2f"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op2" id="0xaa" scope="0x31" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x30"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xab" scope="0x31" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x30"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op2" id="0xac" scope="0x32" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x31"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xad" scope="0x32" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x31"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="opcode1" id="0xae" scope="0x33" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x32"/>
+<tokenfield bigendian="false" signbit="false" bitstart="9" bitend="12" bytestart="1" byteend="1" shift="1"/>
+</operand_sym>
+<operand_sym name="op2" id="0xaf" scope="0x33" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x32"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xb0" scope="0x33" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x32"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op2" id="0xb1" scope="0x34" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x33"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0xb2" scope="0x35" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x34"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xb3" scope="0x35" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x34"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op2" id="0xb4" scope="0x36" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x35"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0xb5" scope="0x37" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x36"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xb6" scope="0x37" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x36"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="opcode1" id="0xb7" scope="0x38" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x37"/>
+<tokenfield bigendian="false" signbit="false" bitstart="9" bitend="12" bytestart="1" byteend="1" shift="1"/>
+</operand_sym>
+<operand_sym name="op1" id="0xb8" scope="0x38" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x37"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op1" id="0xb9" scope="0x39" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x39"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op1" id="0xba" scope="0x3a" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x3a"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op2" id="0xbb" scope="0x3b" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x3b"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xbc" scope="0x3b" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x3b"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op2" id="0xbd" scope="0x3c" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x3c"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xbe" scope="0x3c" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x3c"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op2" id="0xbf" scope="0x3d" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x3d"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xc0" scope="0x3d" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x3d"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op2" id="0xc1" scope="0x3e" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x3e"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xc2" scope="0x3e" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x3e"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op1" id="0xc3" scope="0x3f" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x3f"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op1" id="0xc4" scope="0x40" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x40"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op1" id="0xc5" scope="0x41" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x42"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op1" id="0xc6" scope="0x42" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x43"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op1" id="0xc7" scope="0x43" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x44"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="op1" id="0xc8" scope="0x44" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x45"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0xc9" scope="0x45" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x46"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="opcode1" id="0xca" scope="0x45" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x46"/>
+<tokenfield bigendian="false" signbit="false" bitstart="9" bitend="12" bytestart="1" byteend="1" shift="1"/>
+</operand_sym>
+<operand_sym name="op2" id="0xcb" scope="0x45" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x46"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xcc" scope="0x45" off="0" base="-1" minlen="2" index="3">
+<operand_exp index="3" table="0x0" ct="0x46"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="b0" id="0xcd" scope="0x45" off="0" base="-1" minlen="2" index="4">
+<operand_exp index="4" table="0x0" ct="0x46"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="0" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="i" id="0xce" scope="0x46" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x47"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0xcf" scope="0x46" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x47"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xd0" scope="0x46" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x47"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0xd1" scope="0x47" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x48"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0xd2" scope="0x47" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x48"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xd3" scope="0x47" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x48"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0xd4" scope="0x48" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x49"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0xd5" scope="0x48" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x49"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="i" id="0xd6" scope="0x49" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x4b"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="opcode1" id="0xd7" scope="0x49" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x4b"/>
+<tokenfield bigendian="false" signbit="false" bitstart="9" bitend="12" bytestart="1" byteend="1" shift="1"/>
+</operand_sym>
+<operand_sym name="op2" id="0xd8" scope="0x49" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x4b"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xd9" scope="0x49" off="0" base="-1" minlen="2" index="3">
+<operand_exp index="3" table="0x0" ct="0x4b"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="b0" id="0xda" scope="0x49" off="0" base="-1" minlen="2" index="4">
+<operand_exp index="4" table="0x0" ct="0x4b"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="0" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="i" id="0xdb" scope="0x4a" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x4c"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0xdc" scope="0x4a" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x4c"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xdd" scope="0x4a" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x4c"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0xde" scope="0x4b" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x4d"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0xdf" scope="0x4b" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x4d"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xe0" scope="0x4b" off="0" base="-1" minlen="2" index="2">
+<operand_exp index="2" table="0x0" ct="0x4d"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0xe1" scope="0x4c" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x4e"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op2" id="0xe2" scope="0x4c" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x4e"/>
+<tokenfield bigendian="false" signbit="false" bitstart="5" bitend="8" bytestart="0" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="i" id="0xe3" scope="0x4d" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x4f"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xe4" scope="0x4d" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x4f"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0xe5" scope="0x4e" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x50"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xe6" scope="0x4e" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x50"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+<operand_sym name="i" id="0xe7" scope="0x4f" off="0" base="-1" minlen="2" index="0">
+<operand_exp index="0" table="0x0" ct="0x51"/>
+<tokenfield bigendian="false" signbit="false" bitstart="13" bitend="13" bytestart="1" byteend="1" shift="5"/>
+</operand_sym>
+<operand_sym name="op1" id="0xe8" scope="0x4f" off="0" base="-1" minlen="2" index="1">
+<operand_exp index="1" table="0x0" ct="0x51"/>
+<tokenfield bigendian="false" signbit="false" bitstart="1" bitend="4" bytestart="0" byteend="0" shift="1"/>
+</operand_sym>
+</symbol_table>
+</sleigh>

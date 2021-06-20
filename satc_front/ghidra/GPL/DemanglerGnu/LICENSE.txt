@@ -1,0 +1,47 @@
+The program in this module is released under the GPL 3 license. 
+The files used to create this program include both public domain
+files created by the Ghidra team and 3rd party files with 
+the GPL 3 or GPL 3 compatible license. The license files for each of license used can be found in the
+<installation root>/GPL/licenses.
+
+
+The 3rd party files in this module are as follows:
+
+
+GPL 3:
+
+	src/demangler_gnu/headers/libiberty.h
+	src/demangler_gnu/headers/ansidecl.h
+	src/demangler_gnu/headers/getopt.h
+	src/demangler_gnu/headers/dyn-string.h
+	src/demangler_gnu/c/getopt1.c
+	src/demangler_gnu/c/getopt.c
+	os/linux64/demangler_gnu
+	os/win64/demangler_gnu.exe
+	os/osx64/demangler_gnu
+
+LGPL 3.0:
+
+	src/demangler_gnu/headers/demangle.h
+	src/demangler_gnu/headers/safe-ctype.h
+
+LGPL 2.1:
+
+	src/demangler_gnu/c/alloca.c
+	src/demangler_gnu/c/safe-ctype.c
+	src/demangler_gnu/c/cplus-dem.c
+	src/demangler_gnu/c/xstrdup.c
+	src/demangler_gnu/c/argv.c
+	src/demangler_gnu/c/xexit.c
+
+GPL 3 Linking Permitted:
+
+	src/demangler_gnu/headers/cp-demangle.h
+	src/demangler_gnu/c/cp-demangle.c
+	src/demangler_gnu/c/dyn-string.c
+
+Public Domain:
+
+	settings.gradle
+	src/demangler_gnu/README.txt
+

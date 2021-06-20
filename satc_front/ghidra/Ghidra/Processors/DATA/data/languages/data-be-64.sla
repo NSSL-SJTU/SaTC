@@ -1,0 +1,43 @@
+<sleigh version="2" bigendian="true" align="1" uniqbase="0x0">
+<spaces defaultspace="ram">
+<space_other name="OTHER" index="1" bigendian="true" delay="0" size="8" physical="false"/>
+<space_unique name="unique" index="2" bigendian="true" delay="0" size="4" physical="true"/>
+<space name="ram" index="3" bigendian="true" delay="1" size="8" physical="true"/>
+<space name="register" index="4" bigendian="true" delay="0" size="4" physical="true"/>
+</spaces>
+<symbol_table scopesize="1" symbolsize="7">
+<scope id="0x0" parent="0x0"/>
+<subtable_sym_head name="instruction" id="0x0" scope="0x0"/>
+<start_sym_head name="inst_start" id="0x1" scope="0x0"/>
+<end_sym_head name="inst_next" id="0x2" scope="0x0"/>
+<varnode_sym_head name="sp" id="0x3" scope="0x0"/>
+<varnode_sym_head name="r0" id="0x4" scope="0x0"/>
+<varnode_sym_head name="contextreg" id="0x5" scope="0x0"/>
+<context_sym_head name="test" id="0x6" scope="0x0"/>
+<subtable_sym name="instruction" id="0x0" scope="0x0" numct="1">
+<constructor parent="0x0" first="1" length="0" line="26">
+<print piece="nop"/>
+</constructor>
+<decision number="1" context="false" start="0" size="0">
+<pair id="0">
+<context_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0x80000000" val="0x80000000"/>
+</pat_block>
+</context_pat>
+</pair>
+</decision>
+</subtable_sym>
+<start_sym name="inst_start" id="0x1" scope="0x0"/>
+<end_sym name="inst_next" id="0x2" scope="0x0"/>
+<varnode_sym name="sp" id="0x3" scope="0x0" space="register" offset="0x0" size="8">
+</varnode_sym>
+<varnode_sym name="r0" id="0x4" scope="0x0" space="register" offset="0x8" size="8">
+</varnode_sym>
+<varnode_sym name="contextreg" id="0x5" scope="0x0" space="register" offset="0x100" size="4">
+</varnode_sym>
+<context_sym name="test" id="0x6" scope="0x0" varnode="0x5" low="0" high="0" flow="true">
+<contextfield signbit="false" startbit="0" endbit="0" startbyte="0" endbyte="0" shift="7"/>
+</context_sym>
+</symbol_table>
+</sleigh>

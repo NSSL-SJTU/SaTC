@@ -1,0 +1,29 @@
+{
+  "name": "jsparse",
+  "version": "1.0.1",
+  "description": "js语法树解析",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://121.36.149.38/tt/jsparse.git"
+  },
+  "author": "wisdomzj",
+  "license": "ISC",
+  "dependencies": {
+    "acorn": "^7.3.1",
+    "acorn-bigint": "^1.0.0",
+    "acorn-jsx": "^5.2.0",
+    "esprima": "^4.0.1",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-json-error": "^3.1.2",
+    "koa-router": "^9.1.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  }
+}
