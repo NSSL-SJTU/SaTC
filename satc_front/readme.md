@@ -31,15 +31,18 @@ optional arguments:
 
 -b 指定边界程序路径(必须)，指定RTOS程序
 
+## 环境依赖
 
-## 运行步骤:
+需要下载ghidra框加到当前路径下
 
-1. 运行前先进入jsparse目录运行 `npm run start` ,或者使用docker运行
+## 运行程序:
+
+1. 提取JS文件需要先进入jsparse目录运行 `npm run start` ,或者使用docker运行
 > docker build . -t jsparse
 
 > docker run -itd 3000:3000 jsparse
 
-2. 运行程序即可
+2. 运行主程序satc.py即可
 
 
 ### 扩展支持blob firmware形式的RTOS固件
