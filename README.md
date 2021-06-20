@@ -12,7 +12,7 @@ We present our approach and the findings of this work in the following research 
 **Sharing More and Checking Less: Leveraging Common Input Keywords to Detect Bugs in Embedded Systems** 
 [[PDF]](https://www.usenix.org/system/files/sec21fall-chen-libo.pdf)  
 
-
+## Repository Structure
 
 This project includes two modules:
 
