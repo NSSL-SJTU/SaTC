@@ -6,7 +6,6 @@
 import os
 import stat
 from copy import copy
-import magic
 
 from front_analysise.untils.logger.logger import get_logger
 from front_analysise.untils.config import SPECIAL_COMMAND, SPECIAL_MID_NAME, REMOVE_FILE, SPECIAL_PATH
@@ -37,48 +36,30 @@ class TraverFile(object):
     def getallfile(self):
         self._alldir = os.walk(self._dirname)
         for file in self._alldir:
-            base_path = file[0]
             for _fm_name in file[2]:
-                filepath = os.path.join(base_path, _fm_name)
-
+                suffix_name = TraverFile.get_suffix(_fm_name.lower())
+                filepath = str(file[0])+ '/' +str(_fm_name)
+                if any(s in str(file[0]) for s in SPECIAL_PATH):
+                    continue
                 if _fm_name in REMOVE_FILE:
                     continue
                 if os.path.islink(filepath):
                     continue
-
-                ft = magic.from_file(filepath, mime=True)
-                if ft == "text/html" or ft == "text/plain":
+                if suffix_name.lower() == "htm" or suffix_name.lower() == "html" or suffix_name.lower() == "shtml":
                     self._htmlfile.append(filepath)
                     self.log.debug("[*] Find HTML file : {}".format(filepath))
-                if ft == "text/plain":
-                    # If the type is text/plain, treat it as javascript
+                elif suffix_name.lower() == "js":
                     self._jsfile.append(filepath)
+                    # self._jsfile.append("/home/lin/manjaro_back/firmware/_US_AC15V1.0BR_V15.03.05.19_multi_TD01.bin.extracted/squashfs-root/webroot_ro/js/iptv.js")
                     self.log.debug("[*] Find Javascript file : {}".format(filepath))
+                elif suffix_name.lower() == "xml":
+                    self._xmlfile.append(filepath)
+                    self.log.debug("[*] Find XML file : {}".format(filepath))
+                # 在此添加其他文件的处理
+                elif TraverFile.is_ELFfile(filepath):
+                    self._elffile.append(filepath)
+                    self.log.debug("[*] Find Binary file : {}".format(filepath))
                 self.allfile.append(filepath)
-
-                # suffix_name = TraverFile.get_suffix(_fm_name.lower())
-                # filepath = str(file[0])+ '/' +str(_fm_name)
-                # if any(s in str(file[0]) for s in SPECIAL_PATH):
-                #     continue
-                # if _fm_name in REMOVE_FILE:
-                #     continue
-                # if os.path.islink(filepath):
-                #     continue
-                # if suffix_name.lower() == "htm" or suffix_name.lower() == "html" or suffix_name.lower() == "shtml":
-                #     self._htmlfile.append(filepath)
-                #     self.log.debug("[*] Find HTML file : {}".format(filepath))
-                # elif suffix_name.lower() == "js":
-                #     self._jsfile.append(filepath)
-                #     # self._jsfile.append("/home/lin/manjaro_back/firmware/_US_AC15V1.0BR_V15.03.05.19_multi_TD01.bin.extracted/squashfs-root/webroot_ro/js/iptv.js")
-                #     self.log.debug("[*] Find Javascript file : {}".format(filepath))
-                # elif suffix_name.lower() == "xml":
-                #     self._xmlfile.append(filepath)
-                #     self.log.debug("[*] Find XML file : {}".format(filepath))
-                # # 在此添加其他文件的处理
-                # elif TraverFile.is_ELFfile(filepath):
-                #     self._elffile.append(filepath)
-                #     self.log.debug("[*] Find Binary file : {}".format(filepath))
-                # self.allfile.append(filepath)
 
     @staticmethod
     def is_ELFfile(filepath):

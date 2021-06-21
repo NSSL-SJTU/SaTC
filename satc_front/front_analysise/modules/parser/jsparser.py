@@ -42,17 +42,6 @@ class JSParser(BaseParser):
 
         return tmp_keywords, tmp_functions
 
-
-    @staticmethod
-    def parse_js_str(code=""):
-        """
-        从JS代码中提取可能作为参数的变量
-        return:
-            tmp_keywords: 可能作为关键字变量的字符串
-            tmp_functions: 可能作为可能作为action的字符串 (RTOS忽略)
-        """
-        return JSParser.js_in_html_parse(code)
-
     @staticmethod
     def _js_reader(content, key=""):
         tmp_keywords = set()

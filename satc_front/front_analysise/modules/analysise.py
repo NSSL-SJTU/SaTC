@@ -48,13 +48,27 @@ class FrontAnalysise(_BaseAnalysise):
             self.log.info(" Start Analysise {} File".format(suffix))
             files = self.traver.get_file(suffix)
             # files = ["/home/tt/vmware_share/_DIR_878_FW120B05_decode.BIN.extracted/_A0.extracted/_8957DC.extracted/cpio-root/etc_ro/lighttpd/www/web/Network.html"]
+            # 如果当前处理的是JS，需要特殊处理
+            if suffix == "js" and JS_LIMITED_ACTIVATION:
+                js_file = []
+                for fn, jobj in self.jsfile_citations.items():
+                    for file in files[::-1]:
+                        # ROTS test
+                        # js_file.append(file)
+                        if file.split("/")[-1] == fn:
+                            if jobj.be_depend_count < JS_FILE_LIMITED_NUMBER:
+                                js_file.append(file)
+                                # js_file.append("/home/lin/manjaro_back/firmware/_US_AC15V1.0BR_V15.03.05.19_multi_TD01.bin.extracted/squashfs-root/webroot_ro/js/iptv.js")
+                            else:
+                                self.remove_file.add(jobj)
+
+                files = js_file
+                # files = ["/home/tt/firmware/_ac18_kf_V15.03.05.19(6318_)_cn.bin.extracted/squashfs-root/webroot_ro/iptv.js"]
 
             for file in files:
                 parseobj = parser(file)
                 parseobj.analysise()
                 self.analysise_obj.append(parseobj)
-
-                # 下面的代码是统计JS文件在HTML文件中的引用次数, RTOS中请忽略这段代码。
                 if isinstance(parseobj, HTMLParser) and JS_LIMITED_ACTIVATION:
                     jsfile_citations = parseobj.get_jsfile_citations()
                     for jsfile, jobg in jsfile_citations.items():

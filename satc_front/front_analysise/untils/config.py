@@ -12,7 +12,7 @@ ANALYSIZER = {
     "html": HTMLParser,
     "asp": HTMLParser,
     "php": HTMLParser,
-    # "xml": DlinkHNAPXMLParser,
+    "xml": DlinkHNAPXMLParser,
     "js": JSParser
 }
 
@@ -44,7 +44,7 @@ SPECIAL_PATH = []
 API_SPLIT_MARCH = False
 
 # 如果Para在bin的结果中部分匹配，是否需要保留匹配结果
-FROM_BIN_ADD = False
+FROM_BIN_ADD = True
 
 # 是否启用UPNP分析
 UPNP_ANALYSISE = False
