@@ -1,5 +1,19 @@
 
-完整代码环境正在整理中...
+## Docker环境
+
+
+
+关键字提取：
+> docker pull smile0304/satc_front_analysise:v1.0
+
+> docker run -it smile0304/satc_front_analysise:v1.0
+
+污点分析:
+> docker pull cpegg/satc:1.2.0
+
+> docker run -it cpegg/satc:1.2.0
+
+根据情况使用`-v`添加映射
 
 
 
