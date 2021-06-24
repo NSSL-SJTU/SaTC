@@ -11,7 +11,7 @@ from taint_analysis.coretaint import TimeOutException
 
 INDEXING_OPS = ('add', 'sub')
 #CMP_FUNCTIONS = ('strcmp', 'strncmp', 'memcmp')
-#CPY_FUNS = ('sprintf', 'snprintf')
+CPY_FUNS = ('sprintf', 'snprintf')
 
 
 class Semantic(CPF):
@@ -298,7 +298,7 @@ class Semantic(CPF):
                 elif hasattr(s.addr, 'con'):
                     buf_addr = s.addr.con.value
                 else:
-                    print "Never seen this case.. check me!"
+                    print("Never seen this case.. check me!")
                     return False, Role.UNKNOWN
             elif s.tag == 'Ist_WrTmp' and s.data.tag == 'Iex_Load':
                 # if the memory location to read from depends on the key, is a getter
@@ -312,7 +312,7 @@ class Semantic(CPF):
                 elif hasattr(s.data.addr, 'con'):
                     buf_addr = s.data.addr.con.value
                 else:
-                    print "Never seen this case.. check me!"
+                    print("Never seen this case.. check me!")
                     return False, Role.UNKNOWN
 
             elif s.tag == 'Ist_IMark':
@@ -412,7 +412,7 @@ class Semantic(CPF):
 
             if no.predecessors:
                 arity = get_arity(self._p, no.predecessors[0].addr)
-                for narg in xrange(arity):
+                for narg in range(arity):
                     dst_reg = ordered_argument_regs[self._p.arch.name][narg]
                     dst_addr = getattr(current_path.active[0].regs, self._p.arch.register_names[dst_reg])
                     if core_taint.is_or_points_to_tainted_data(dst_addr, current_path):
@@ -464,7 +464,7 @@ class Semantic(CPF):
             if succ.name in CPY_FUNS:
                 caller_block_addr = current_addr
                 arity = get_arity(p, caller_block_addr)
-                for narg in xrange(arity):
+                for narg in range(arity):
 
                     dst_reg = ordered_argument_regs[p.arch.name][narg]
                     dst_reg_cnt = getattr(next_path.active[0].regs, self._p.arch.register_names[dst_reg])

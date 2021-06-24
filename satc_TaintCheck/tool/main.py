@@ -7,6 +7,7 @@ import random,string
 import pickle
 import conv_Ghidra_output
 lastfulltrace=[]
+
 def main_main():
     if len(sys.argv)<3:
         print("python tool/main.py <path_to_firmware> <path_to_config>")
@@ -61,8 +62,8 @@ def main_main():
                     callerbb=None
             else:
                 if not proj.loader.main_object.pic or "system.so" in proj.filename:
-                    print hex(int(cont[i*3].split(' ')[1],0))
-                    print cfg.get_any_node(int(cont[i*3].split(' ')[1],0),anyaddr=True)
+                    print(hex(int(cont[i*3].split(' ')[1],0)))
+                    print(cfg.get_any_node(int(cont[i*3].split(' ')[1],0),anyaddr=True))
                     start_addr=cfg.get_any_node(int(cont[i*3].split(' ')[1],0),anyaddr=True).function_address
                     callerbb=cfg.get_any_node(int(cont[i*3].split(' ')[1],0),anyaddr=True).addr
                     with open(binary,'rb') as f:
@@ -82,15 +83,15 @@ def main_main():
                 
             sinkTargets=[cfg.get_any_node(j,anyaddr=True).addr for j in sinkTargets]
             for j in func_addr:
-                print j
-                print cfg.get_any_node(j,anyaddr=True).addr
+                print(j)
+                print(cfg.get_any_node(j,anyaddr=True).addr)
             followtar=[cfg.get_any_node(j,anyaddr=True).addr for j in func_addr]
 
             setfindflag(False)
             setSinkTarget(sinkTargets)
             setfollowTarget(followtar)
             
-            print "Analyzing %s from 0x%X, taint 0x%X, sinkTarget%s, functrace %s"%(binary, start_addr, taint_addr, str([hex(j) for j in sinkTargets]), str([hex(j) for j in followtar]))
+            print("Analyzing %s from 0x%X, taint 0x%X, sinkTarget%s, functrace %s"%(binary, start_addr, taint_addr, str([hex(j) for j in sinkTargets]), str([hex(j) for j in followtar])))
             if not callerbb:
                 main(start_addr,taint_addr,binary,proj,cfg)
             else:
@@ -105,12 +106,14 @@ def main_main():
             with open('result-%s.txt'%appe,'a') as f:
                 f.write(res+'\n')
         except Exception as e:
-            print e
+            print(e)
     with open('result-%s.txt'%appe,'a') as f:
         f.write("total cases: %d\n"%cases)
         f.write("find cases: %d\n"%find_cases)
         f.write("binary: %s\n"%binary)
         f.write("configfile: %s\n"%configfile)
     print("Saved in "+'result-%s.txt'%appe)
+
+
 if __name__=='__main__':
     main_main()

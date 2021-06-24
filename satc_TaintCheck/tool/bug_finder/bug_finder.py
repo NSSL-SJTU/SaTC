@@ -14,7 +14,7 @@ from taint_analysis import coretaint, summary_functions
 from taint_analysis.coretaint import TimeOutException
 from taint_analysis.utils import get_arity, link_regs, ordered_argument_regs,setBugFindingFlag
 from utils import *
-from sinks import exe_funcs
+# from sinks import exe_funcs
 
 angr.loggers.disable_root_logger()
 angr.logging.disable(logging.ERROR)

@@ -12,12 +12,14 @@ from binary_dependency_graph.binary_dependency_graph import BinaryDependencyGrap
 from binary_dependency_graph.utils import get_ord_arguments_call, get_any_arguments_call, are_parameters_in_registers, \
     get_mem_string, STR_LEN, get_memcpy_like, get_sizeof_like, get_heap_alloc, get_env, get_memcmp_like_unsized, \
     get_memcmp_like_sized, get_dyn_sym_addr, find_memcpy_like, get_reg_used, get_addrs_similar_string, \
-    get_indirect_str_refs, get_atoi, get_nvram, get_cJSON
+    get_indirect_str_refs, get_atoi, get_nvram, get_cJSON, TIMEOUT_TAINT, TIMEOUT_TRIES
+from bug_finder import sinks
+from bug_finder.utils import SINK_FUNCS
 from taint_analysis import coretaint, summary_functions
 from taint_analysis.coretaint import TimeOutException
 from taint_analysis.utils import get_arity, link_regs, ordered_argument_regs,setBugFindingFlag
-from utils import *
-from sinks import exe_funcs
+# from utils import *
+# from sinks import exe_funcs
 
 angr.loggers.disable_root_logger()
 angr.logging.disable(logging.ERROR)
@@ -37,6 +39,7 @@ def setr4(intt):
 def clearsinktarget():
     global sinkTarget
     sinkTarget=[]
+
 def setSinkTarget(lit):
     global sinkTarget
     sinkTarget=lit
@@ -49,7 +52,7 @@ class BugFinder:
             log = logger_obj
 
         self._config = config
-	self._bdg = None
+        self._bdg = None
         #self._bdg = bdg
         self._ct = None
         self._current_seed_addr = None
@@ -99,9 +102,11 @@ class BugFinder:
         :param taint_key: taint the used data key
         :return:
         """
-	#print "_apply_taint",addr
+
+        #print "_apply_taint",addr
+
         def is_arg_key(arg):
-            return hasattr(arg, 'args') and type(arg.args[0]) in (int, long) and arg.args[0] == self._current_seed_addr
+            return hasattr(arg, 'args') and type(arg.args[0]) in (int) and arg.args[0] == self._current_seed_addr
 
         p = self._current_p
         ins_args = get_ord_arguments_call(p, addr)
@@ -110,7 +115,8 @@ class BugFinder:
 
         if not are_parameters_in_registers(p):
             raise Exception("Parameters not in registers: Implement me")
-	#print current_path.active,taint_key
+        #print current_path.active,taint_key
+
         for stmt in ins_args:
             reg_off = stmt.offset
             reg_name = p.arch.register_names[reg_off]
@@ -141,8 +147,8 @@ class BugFinder:
         memcmp_like_unsized = get_memcmp_like_unsized(p)
         memcmp_like_sized = get_memcmp_like_sized(p)
         atoi_like = get_atoi(p)
-	nvram_summ = get_nvram(p)
- 	cJSON_get_summ = get_cJSON(p)
+        nvram_summ = get_nvram(p)
+        cJSON_get_summ = get_cJSON(p)
 
         summaries = mem_cpy_summ
         summaries.update(size_of_summ)
@@ -151,8 +157,8 @@ class BugFinder:
         summaries.update(memcmp_like_unsized)
         summaries.update(memcmp_like_sized)
         summaries.update(atoi_like)
-	summaries.update(nvram_summ)
-	summaries.update(cJSON_get_summ)
+        summaries.update(nvram_summ)
+        summaries.update(cJSON_get_summ)
         return summaries
 
     def _get_initial_state(self, addr):
@@ -201,12 +207,14 @@ class BugFinder:
 
         self._sink_addrs = [(get_dyn_sym_addr(p, func[0]), func[1]) for func in SINK_FUNCS]
         self._sink_addrs += [(m, sinks.memcpy) for m in find_memcpy_like(p)]
+
     def insinkList(self,addr):
-	global sinkTarget
-	#print "insinkList",sinkTarget,addr
-	if addr in sinkTarget:
-	    return True
-	return False
+        global sinkTarget
+        #print "insinkList",sinkTarget,addr
+        if addr in sinkTarget:
+            return True
+        return False
+
     def _jump_in_sink(self, current_path):
         """
         Checks whether a basic block contains a jump into a sink
@@ -243,7 +251,7 @@ class BugFinder:
         if not is_sink:
             return False
 
-	#print "_is_sink_and_tainted",current_path.active
+        #print "_is_sink_and_tainted",current_path.active
         plt_path = current_path.copy(copy_states=True).step()
         return check_taint_func(p, self._ct, plt_path, size_con=self._current_max_size)
 
@@ -489,7 +497,7 @@ class BugFinder:
         ana_start_time = time.time()
 
         # prepare the under-contrainted-based initial state
-	setBugFindingFlag(True,self._current_cfg)
+        setBugFindingFlag(True, self._current_cfg)
         self._ct = coretaint.CoreTaint(self._current_p, interfunction_level=1, smart_call=True,
                                        follow_unsat=True, black_calls=(info[RoleInfo.ROLE_FUN],),
                                        try_thumb=True, shuffle_sat=True,
@@ -497,7 +505,7 @@ class BugFinder:
                                        taint_returns_unfollowed_calls=True, allow_untaint=True,
                                        logger_obj=log)
         summarized_f = self._get_function_summaries()
-	s = self._get_initial_state(info[RoleInfo.X_REF_FUN])
+        s = self._get_initial_state(info[RoleInfo.X_REF_FUN])
         self._find_sink_addresses()
         self._ct.set_alarm(TIMEOUT_TAINT, n_tries=TIMEOUT_TRIES)
         try:
@@ -509,14 +517,15 @@ class BugFinder:
             log.error("Something went terribly wrong: %s" % str(e))
 
         self._ct.unset_alarm()
-	'''
+        '''
         # stats
         self._stats[bdg_node.bin]['to'] += 1 if self._ct.triggered_to() else 0
         self._stats[bdg_node.bin]['visited_bb'] += self._visited_bb
         self._stats[bdg_node.bin]['n_paths'] += self._ct.n_paths
         self._stats[bdg_node.bin]['ana_time'] += (time.time() - ana_start_time)
         self._stats[bdg_node.bin]['n_runs'] += 1
-	'''
+        '''
+
     @staticmethod
     def find_ref_http_strings(n, keywords):
         """
@@ -610,109 +619,110 @@ class BugFinder:
             log.set_etc(etc)
             log.set_tot_elaborations(tot_dk)
 
-    def _analyze(self):
-        """
-        Runs the actual vulnerability detection analysis
-
-        :return:
-        """
-
-        roots = [x for x in self._bdg.nodes if x.root]
-        worklist = roots
-        analyzed_dk = {}
-
-        # setup the loading bar
-        self._setup_progress_bar()
-        self._analysis_starting_time = time.time()
-
-        index = 0
-
-        # connected graph
-        while index < len(worklist):
-            parent = worklist[index]
-            index += 1
-
-            if parent not in analyzed_dk:
-                analyzed_dk[parent] = []
-
-            # take the node's info and find the size of the
-            # buffer(s) used to send data to its children
-            sa = size_analysis.SizeAnalysis(parent, logger_obj=log)
-            max_size = sa.result
-            parent_strings = parent.role_data_keys
-
-            # analyze parents
-            if self._analyze_parents:
-                parent_name = parent.bin.split('/')[-1]
-                log.info("Analyzing parents %s" % parent_name)
-                for s_addr, s_refs_info in parent.role_info.items():
-                    for info in s_refs_info:
-                        if info in analyzed_dk[parent]:
-                            continue
-
-                        analyzed_dk[parent].append(info)
-                        self._register_next_elaboration()
-                        log.info("New string: %s" % info[RoleInfo.DATAKEY])
-                        self._vuln_analysis(parent, s_addr, info, max_size)
-		for vuln_func in exe_funcs:
-		    if vuln_func in parent.p.loader.main_object.plt:
-                        vuln_func_plt = parent.p.loader.main_object.plt[vuln_func]
-                self._report_stats_fun(parent, self._stats)
-
-            if self._analyze_children:
-                # analyze children
-                for child in self._bdg.graph[parent]:
-                    child_name = child.bin.split('/')[-1]
-                    log.info("Analyzing children %s" % child_name)
-
-                    if child not in worklist:
-                        worklist.append(child)
-                    if child not in analyzed_dk:
-                        analyzed_dk[child] = []
-                    for s_addr, s_refs_info in child.role_info.items():
-                        for info in s_refs_info:
-                            if info in analyzed_dk[child]:
-                                continue
-			    for i in info:
-				print i,":",info[i]
-			    
-                            if info[RoleInfo.DATAKEY] in parent_strings or parent.could_be_generated(
-                                    info[RoleInfo.DATAKEY]):
-                                # update the loading bar
-                                self._register_next_elaboration()
-                                analyzed_dk[child].append(info)
-                                log.info("New string: %s" % info[RoleInfo.DATAKEY])
-				print help(child)
-				print s_addr
-				print info
-				print max_size
-                                self._vuln_analysis(child, s_addr, info, max_size)
-                    self._report_stats_fun(child, self._stats)
-
-        if self._analyze_children:
-            # orphans
-            log.info("Analyzing orphan nodes")
-            max_size = size_analysis.MAX_BUF_SIZE
-            for n in self._bdg.orphans:
-                log.info("Analyzing orphan %s" % n.bin)
-                if n not in analyzed_dk:
-                    analyzed_dk[n] = []
-#		if "httpd" in n.bin:
-#		    info={"RoleInfo.COMM_BUFF":None,"RoleInfo.ROLE_INS_IDX":None,"RoleInfo.CPF":environment,"RoleInfo.ROLE_INS":0x2BABC,"RoleInfo.ROLE":Role.GETTER,"
-                for s_addr, s_refs_info in n.role_info.items():
-                    for info in s_refs_info:
-                        if info in analyzed_dk[n]:
-                            continue
-                        if self._config['only_string'].lower() == 'true':
-                            if info[RoleInfo.DATAKEY] != self._config['data_keys'][0][1]:
-                                continue
-                        analyzed_dk[n].append(info)
-
-                        # update the loading bar
-                        self._register_next_elaboration()
-                        log.info("New string: %s" % info[RoleInfo.DATAKEY])
-                        self._vuln_analysis(n, s_addr, info, max_size)
-                self._report_stats_fun(n, self._stats)
+#     def _analyze(self):
+#         """
+#         Runs the actual vulnerability detection analysis
+#
+#         :return:
+#         """
+#
+#         roots = [x for x in self._bdg.nodes if x.root]
+#         worklist = roots
+#         analyzed_dk = {}
+#
+#         # setup the loading bar
+#         self._setup_progress_bar()
+#         self._analysis_starting_time = time.time()
+#
+#         index = 0
+#
+#         # connected graph
+#         while index < len(worklist):
+#             parent = worklist[index]
+#             index += 1
+#
+#             if parent not in analyzed_dk:
+#                 analyzed_dk[parent] = []
+#
+#             # take the node's info and find the size of the
+#             # buffer(s) used to send data to its children
+#             sa = size_analysis.SizeAnalysis(parent, logger_obj=log)
+#             max_size = sa.result
+#             parent_strings = parent.role_data_keys
+#
+#             # analyze parents
+#             if self._analyze_parents:
+#                 parent_name = parent.bin.split('/')[-1]
+#                 log.info("Analyzing parents %s" % parent_name)
+#                 for s_addr, s_refs_info in parent.role_info.items():
+#                     for info in s_refs_info:
+#                         if info in analyzed_dk[parent]:
+#                             continue
+#
+#                         analyzed_dk[parent].append(info)
+#                         self._register_next_elaboration()
+#                         log.info("New string: %s" % info[RoleInfo.DATAKEY])
+#                         self._vuln_analysis(parent, s_addr, info, max_size)
+# 		for vuln_func in exe_funcs:
+# 		    if vuln_func in parent.p.loader.main_object.plt:
+#                         vuln_func_plt = parent.p.loader.main_object.plt[vuln_func]
+#                 self._report_stats_fun(parent, self._stats)
+#
+#             if self._analyze_children:
+#                 # analyze children
+#                 for child in self._bdg.graph[parent]:
+#                     child_name = child.bin.split('/')[-1]
+#                     log.info("Analyzing children %s" % child_name)
+#
+#                     if child not in worklist:
+#                         worklist.append(child)
+#                     if child not in analyzed_dk:
+#                         analyzed_dk[child] = []
+#                     for s_addr, s_refs_info in child.role_info.items():
+#                         for info in s_refs_info:
+#                             if info in analyzed_dk[child]:
+#                                 continue
+#                             for i in info:
+#                                 print(i,":",info[i])
+#
+#                             if info[RoleInfo.DATAKEY] in parent_strings or parent.could_be_generated(
+#                                     info[RoleInfo.DATAKEY]):
+#                                 # update the loading bar
+#                                 self._register_next_elaboration()
+#                                 analyzed_dk[child].append(info)
+#                                 log.info("New string: %s" % info[RoleInfo.DATAKEY])
+#
+#                             print(help(child))
+#                             print(s_addr)
+#                             print(info)
+#                             print(max_size)
+#                             self._vuln_analysis(child, s_addr, info, max_size)
+#                     self._report_stats_fun(child, self._stats)
+#
+#         if self._analyze_children:
+#             # orphans
+#             log.info("Analyzing orphan nodes")
+#             max_size = size_analysis.MAX_BUF_SIZE
+#             for n in self._bdg.orphans:
+#                 log.info("Analyzing orphan %s" % n.bin)
+#                 if n not in analyzed_dk:
+#                     analyzed_dk[n] = []
+# #		if "httpd" in n.bin:
+# #		    info={"RoleInfo.COMM_BUFF":None,"RoleInfo.ROLE_INS_IDX":None,"RoleInfo.CPF":environment,"RoleInfo.ROLE_INS":0x2BABC,"RoleInfo.ROLE":Role.GETTER,"
+#                 for s_addr, s_refs_info in n.role_info.items():
+#                     for info in s_refs_info:
+#                         if info in analyzed_dk[n]:
+#                             continue
+#                         if self._config['only_string'].lower() == 'true':
+#                             if info[RoleInfo.DATAKEY] != self._config['data_keys'][0][1]:
+#                                 continue
+#                         analyzed_dk[n].append(info)
+#
+#                         # update the loading bar
+#                         self._register_next_elaboration()
+#                         log.info("New string: %s" % info[RoleInfo.DATAKEY])
+#                         self._vuln_analysis(n, s_addr, info, max_size)
+#                 self._report_stats_fun(n, self._stats)
 
     def analysis_time(self):
         return self._end_time - self._start_time
@@ -751,20 +761,21 @@ class BugFinder:
 
         self._end_time = time.time()
 
+
 def main(func_addr=None,taint_addr=None,binary=None,proj=None,cfg=None,callerbb=None):
     global sinkTarget
     if not func_addr or not taint_addr or not binary:
         func_addr=int(sys.argv[1],0)
         taint_addr=int(sys.argv[2],0)
         binary=sys.argv[3]
-	proj=angr.Project(binary, auto_load_libs=False)
-	cfg = proj.analyses.CFG()
+    proj=angr.Project(binary, auto_load_libs=False)
+    cfg = proj.analyses.CFG()
     config={u'bin': [binary], u'pickle_parsers': u'./pickles/parser/test4.pk', u'stats': u'False', u'data_keys': [], u'base_addr': u'', u'eg_source_addr': u'', u'fw_path': u'./test', u'angr_explode_bins':
 [u'openvpn', u'wpa_supplicant', u'vpn', u'dns', u'ip', u'log', u'qemu-arm-static'], u'var_ord': [u''], u'glob_var': [], u'arch': u'', u'only_string': u'False'}
-    bugfinder=BugFinder(config)
-    if callerbb==None:
-	callerbb=func_addr
-    info={RoleInfo.ROLE_INS_IDX : None, RoleInfo.CPF : "environment", RoleInfo.ROLE_INS : None , RoleInfo.ROLE : Role.GETTER, RoleInfo.CALLER_BB : callerbb, RoleInfo.ROLE_FUN : None, RoleInfo.X_REF_FUN : func_addr, RoleInfo.DATAKEY : "", RoleInfo.PAR_N : 0}
+    bugfinder = BugFinder(config)
+    if callerbb == None:
+        callerbb = func_addr
+    info = {RoleInfo.ROLE_INS_IDX : None, RoleInfo.CPF : "environment", RoleInfo.ROLE_INS : None , RoleInfo.ROLE : Role.GETTER, RoleInfo.CALLER_BB : callerbb, RoleInfo.ROLE_FUN : None, RoleInfo.X_REF_FUN : func_addr, RoleInfo.DATAKEY : "", RoleInfo.PAR_N : 0}
     setBugFindingFlag(True,cfg)
     bugfinder._vuln_analysis(proj,cfg,"environment",taint_addr,info,4294967295)
 
