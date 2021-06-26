@@ -1,0 +1,3 @@
+
+checkcommandinjection = True
+checkbufferoverflow = True
