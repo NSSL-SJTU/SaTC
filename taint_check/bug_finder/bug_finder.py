@@ -3,7 +3,7 @@ import time
 import angr
 import simuvex
 
-import size_analysis
+import taint_check.size_analysis
 from bar_logger import bar_logger
 from binary_dependency_graph.binary_dependency_graph import BinaryDependencyGraph, Role, RoleInfo
 from binary_dependency_graph.utils import get_ord_arguments_call, get_any_arguments_call, are_parameters_in_registers, \

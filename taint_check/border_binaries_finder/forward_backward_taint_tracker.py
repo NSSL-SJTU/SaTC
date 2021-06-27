@@ -11,11 +11,11 @@ from utils import *
 
 sys.path.append(os.path.abspath(os.path.join(dirname(abspath(__file__)), '../../tool')))
 
-from taint_analysis import coretaint, summary_functions
-from taint_analysis.coretaint import TimeOutException
-from taint_analysis.utils import ordered_argument_regs, get_ord_arguments_call, get_any_arguments_call, return_regs
-from stack_variable_recovery import stack_variable_recovery
-from binary_dependency_graph.utils import link_regs, get_memcpy_like, get_sizeof_like, get_heap_alloc, \
+from taint_check.taint_analysis import coretaint, summary_functions
+from taint_check.taint_analysis.coretaint import TimeOutException
+from taint_check.taint_analysis.utils import ordered_argument_regs, get_ord_arguments_call, get_any_arguments_call, return_regs
+from taint_check.stack_variable_recovery import stack_variable_recovery
+from taint_check.binary_dependency_graph.utils import link_regs, get_memcpy_like, get_sizeof_like, get_heap_alloc, \
     get_memcmp_like_unsized, get_memcmp_like_sized
 
 

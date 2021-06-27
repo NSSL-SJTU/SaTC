@@ -1,10 +1,10 @@
 from __init__ import CPF
-from binary_dependency_graph.utils import get_string, are_parameters_in_registers, \
+from taint_check.binary_dependency_graph.utils import get_string, are_parameters_in_registers, \
                                           run_command, contains, link_regs, get_dyn_sym_addrs
-from binary_dependency_graph.bdp_enum import Role, RoleInfo, BuffType
-from taint_analysis import coretaint, summary_functions
-from taint_analysis.coretaint import TimeOutException
-from taint_analysis.utils import ordered_argument_regs, get_arity, return_regs
+from taint_check.binary_dependency_graph.bdp_enum import Role, RoleInfo, BuffType
+from taint_check.taint_analysis import coretaint, summary_functions
+from taint_check.taint_analysis.coretaint import TimeOutException
+from taint_check.taint_analysis.utils import ordered_argument_regs, get_arity, return_regs
 
 import simuvex
 import math

@@ -3,10 +3,10 @@ from __init__ import CPF, LIB_KEYWORD
 import angr
 import itertools
 
-from taint_analysis.utils import ordered_argument_regs, get_arity
-from binary_dependency_graph.utils import get_string, are_parameters_in_registers, run_command, contains
-from binary_dependency_graph.bdp_enum import Role, RoleInfo, BuffType
-from taint_analysis.coretaint import TimeOutException
+from taint_check.taint_analysis.utils import ordered_argument_regs, get_arity
+from taint_check.binary_dependency_graph.utils import get_string, are_parameters_in_registers, run_command, contains
+from taint_check.binary_dependency_graph.bdp_enum import Role, RoleInfo, BuffType
+from taint_check.taint_analysis.coretaint import TimeOutException
 
 M_SET_KEYWORD = ('set', 'insert', 'add', 'nvram_set')
 M_GET_KEYWORD = ('get', 'read', 'nvram_get')

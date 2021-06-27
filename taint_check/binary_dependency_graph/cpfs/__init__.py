@@ -4,8 +4,8 @@ from os.path import dirname, abspath
 
 sys.path.append(dirname(dirname(abspath(__file__))))
 
-from binary_dependency_graph.utils import run_command
-from binary_dependency_graph.bdp_enum import RoleInfo
+from taint_check.binary_dependency_graph.utils import run_command
+from taint_check.binary_dependency_graph.bdp_enum import RoleInfo
 
 log = logging.getLogger("BinaryDependencyGraph")
 log.setLevel("DEBUG")

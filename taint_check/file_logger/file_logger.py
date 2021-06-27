@@ -1,6 +1,6 @@
 import signal
 import time
-from binary_dependency_graph.bdp_enum import RoleInfo
+from taint_check.binary_dependency_graph.bdp_enum import RoleInfo
 from utils import *
 
 

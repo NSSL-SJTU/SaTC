@@ -1,9 +1,9 @@
 from __init__ import CPF, LIB_KEYWORD
-from taint_analysis.utils import ordered_argument_regs
-from binary_dependency_graph.utils import link_regs, get_string, are_parameters_in_registers, run_command
-from binary_dependency_graph.bdp_enum import Role, RoleInfo
-from taint_analysis import coretaint, summary_functions
-from taint_analysis.coretaint import TimeOutException
+from taint_check.taint_analysis.utils import ordered_argument_regs
+from taint_check.binary_dependency_graph.utils import link_regs, get_string, are_parameters_in_registers, run_command
+from taint_check.binary_dependency_graph.bdp_enum import Role, RoleInfo
+from taint_check.taint_analysis import coretaint, summary_functions
+from taint_check.taint_analysis.coretaint import TimeOutException
 import simuvex
 
 TIMEOUT_TAINT = 10
