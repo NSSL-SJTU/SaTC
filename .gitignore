@@ -1,4 +1,7 @@
-.idea
+.ideaa
+
+*.pyc
+
 ghidra
 
 satc_TaintCheck_simple
