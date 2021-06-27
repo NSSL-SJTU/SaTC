@@ -4,15 +4,15 @@ import angr
 import simuvex
 
 import taint_check.size_analysis
-from bar_logger import bar_logger
-from binary_dependency_graph.binary_dependency_graph import BinaryDependencyGraph, Role, RoleInfo
-from binary_dependency_graph.utils import get_ord_arguments_call, get_any_arguments_call, are_parameters_in_registers, \
+from taint_check.bar_logger import bar_logger
+from taint_check.binary_dependency_graph.binary_dependency_graph import BinaryDependencyGraph, Role, RoleInfo
+from taint_check.binary_dependency_graph.utils import get_ord_arguments_call, get_any_arguments_call, are_parameters_in_registers, \
     get_mem_string, STR_LEN, get_memcpy_like, get_sizeof_like, get_heap_alloc, get_env, get_memcmp_like_unsized, \
     get_memcmp_like_sized, get_dyn_sym_addr, find_memcpy_like, get_reg_used, get_addrs_similar_string, \
     get_indirect_str_refs, get_atoi
-from taint_analysis import coretaint, summary_functions
-from taint_analysis.coretaint import TimeOutException
-from taint_analysis.utils import get_arity, link_regs, ordered_argument_regs,setBugFindingFlag
+from taint_check.taint_analysis import coretaint, summary_functions
+from taint_check.taint_analysis.coretaint import TimeOutException
+from taint_check.taint_analysis.utils import get_arity, link_regs, ordered_argument_regs,setBugFindingFlag
 from utils import *
 from sinks import exe_funcs
 
