@@ -121,7 +121,7 @@ def taint_stain_analysis(binary, ghidra_analysis_result, output):
     appe = binary.split('/')[-1] + "-" + ''.join(random.sample(string.ascii_letters + string.digits, 4))
     if '-alter2' not in ghidra_analysis_result:
         conv_Ghidra_output.main(ghidra_analysis_result)
-        configfile = ghidra_analysis_result + '-alter2'
+        ghidra_analysis_result = ghidra_analysis_result + '-alter2'
     with open(ghidra_analysis_result, 'r') as f:
         cont = f.read().split('\n')
     proj = angr.Project(binary, auto_load_libs=False, use_sim_procedures=True)
