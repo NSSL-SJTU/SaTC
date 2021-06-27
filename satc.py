@@ -13,6 +13,7 @@ from front_analysise.untils.tools import runtimer
 from front_analysise.tools.upnpanalysise import UpnpAnalysise
 from config import GHIDRA_SCRIPT, HEADLESS_GHIDRA
 
+import datetime
 import subprocess
 import shutil
 import argparse
@@ -252,6 +253,8 @@ def ghidra_analysise(args, border_bin):
 
 
 def main():
+    start_time = datetime.datetime.now()
+    log.info("Start analysis time : {}".format(str(start_time)))
     args = argsparse()
     bin_list = front_analysise(args)
     if args.ghidra_script:
@@ -263,6 +266,8 @@ def main():
         from taint_check.bug_finder.config import checkcommandinjection, checkbufferoverflow
 
         global checkcommandinjection, checkbufferoverflow
+
+        log.info("Start taint check ... ")
 
         for bin_name, bin_path in bin_list:
             for gs in args.ghidra_script:
@@ -277,6 +282,11 @@ def main():
 
                     # TODO 更改结果文件的保存位置
                     taint_stain_analysis(bin_path, ghidra_result, args.output)
+
+        log.info("End taint check ...")
+    end_time = datetime.datetime.now()
+
+    log.info("Total time : {}s".format((start_time-end_time).seconds))
 
 
 if __name__ == "__main__":

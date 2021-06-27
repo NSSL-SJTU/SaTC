@@ -5,6 +5,7 @@ import sys
 import angr
 import random, string
 import pickle
+import os
 import conv_Ghidra_output
 
 lastfulltrace = []
@@ -116,9 +117,7 @@ def main_main():
 
 
 def taint_stain_analysis(binary, ghidra_analysis_result, output):
-    if len(sys.argv) >= 4:
-        r4 = int(sys.argv[3], 0)
-        setr4(r4)
+
     appe = binary.split('/')[-1] + "-" + ''.join(random.sample(string.ascii_letters + string.digits, 4))
     if '-alter2' not in ghidra_analysis_result:
         conv_Ghidra_output.main(ghidra_analysis_result)
@@ -130,9 +129,11 @@ def taint_stain_analysis(binary, ghidra_analysis_result, output):
     cases = 0
     find_cases = 0
     res = []
-    with open('result-%s.txt' % appe, 'a') as f:
+    result_file = os.path.join(output, "result-{}.txt".format(appe))
+    with open(result_file, 'a') as f:
         f.write("binary: %s\n" % binary)
         f.write("configfile: %s\n" % ghidra_analysis_result)
+
     for i in range(len(cont) / 3):
         # if len(i.split(' '))>2:
         try:
@@ -208,7 +209,7 @@ def taint_stain_analysis(binary, ghidra_analysis_result, output):
         except Exception as e:
             print e
 
-    with open('result-%s.txt' % appe, 'a') as f:
+    with open(result_file, 'a') as f:
         f.write("total cases: %d\n" % cases)
         f.write("find cases: %d\n" % find_cases)
         f.write("binary: %s\n" % binary)
