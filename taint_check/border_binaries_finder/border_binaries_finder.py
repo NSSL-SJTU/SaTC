@@ -17,7 +17,7 @@ from binary_finder import *
 from os.path import dirname, abspath
 
 sys.path.append(os.path.abspath(os.path.join(dirname(abspath(__file__)), '../../tool')))
-from taint_analysis.utils import ordered_argument_regs, get_any_arguments_call
+from taint_check.taint_analysis.utils import ordered_argument_regs, get_any_arguments_call
 from forward_backward_taint_tracker import ForwardBackWardTaintTracker
 
 # logging.basicConfig()

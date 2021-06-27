@@ -1,1 +1,1 @@
-from border_binaries_finder import *
+from taint_check.border_binaries_finder import *

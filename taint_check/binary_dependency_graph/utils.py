@@ -11,8 +11,8 @@ import struct
 
 from os.path import dirname, abspath
 sys.path.append(os.path.abspath(os.path.join(dirname(abspath(__file__)), '../../../tool')))
-from taint_analysis import coretaint, summary_functions
-from taint_analysis.utils import get_ord_arguments_call, get_any_arguments_call, ordered_argument_regs
+from taint_check.taint_analysis import coretaint, summary_functions
+from taint_check.taint_analysis.utils import get_ord_arguments_call, get_any_arguments_call, ordered_argument_regs
 
 # Strings stuff
 MIN_STR_LEN = 3

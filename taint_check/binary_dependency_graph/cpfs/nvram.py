@@ -8,10 +8,10 @@ import re
 from os.path import dirname, abspath
 sys.path.append(dirname(dirname(abspath(__file__))))
 
-from taint_analysis.utils import ordered_argument_regs
-from binary_dependency_graph.utils import get_string, are_parameters_in_registers, run_command
-from binary_dependency_graph.bdp_enum import Role, RoleInfo
-from taint_analysis.coretaint import TimeOutException
+from taint_check.taint_analysis.utils import ordered_argument_regs
+from taint_check.binary_dependency_graph.utils import get_string, are_parameters_in_registers, run_command
+from taint_check.binary_dependency_graph.bdp_enum import Role, RoleInfo
+from taint_check.taint_analysis.coretaint import TimeOutException
 
 M_SET_KEYWORD = 'nvram_safe_set'
 M_GET_KEYWORD = 'nvram_safe_get'

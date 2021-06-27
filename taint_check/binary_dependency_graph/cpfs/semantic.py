@@ -3,11 +3,11 @@ from __init__ import CPF, LIB_KEYWORD
 import angr
 import itertools
 
-from taint_analysis.utils import get_arity
-from binary_dependency_graph.utils import ordered_argument_regs
-from binary_dependency_graph.bdp_enum import Role, RoleInfo, BuffType
-from binary_dependency_graph.utils import get_string, are_parameters_in_registers, run_command, contains
-from taint_analysis.coretaint import TimeOutException
+from taint_check.taint_analysis.utils import get_arity
+from taint_check.binary_dependency_graph.utils import ordered_argument_regs
+from taint_check.binary_dependency_graph.bdp_enum import Role, RoleInfo, BuffType
+from taint_check.binary_dependency_graph.utils import get_string, are_parameters_in_registers, run_command, contains
+from taint_check.taint_analysis.coretaint import TimeOutException
 
 INDEXING_OPS = ('add', 'sub')
 #CMP_FUNCTIONS = ('strcmp', 'strncmp', 'memcmp')

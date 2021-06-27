@@ -1,5 +1,5 @@
-from binary_dependency_graph.utils import are_parameters_in_registers, get_string
-from taint_analysis.utils import ordered_argument_regs, arg_reg_name
+from taint_check.binary_dependency_graph.utils import are_parameters_in_registers, get_string
+from taint_check.taint_analysis.utils import ordered_argument_regs, arg_reg_name
 from .config import checkcommandinjection, checkbufferoverflow
 import traceback
 
