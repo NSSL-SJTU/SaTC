@@ -9,9 +9,9 @@ from cpfs import environment, nvram, file, socket, semantic, setter_getter
 from bdp_enum import *
 
 sys.path.append(os.path.abspath(os.path.join(dirname(abspath(__file__)), '../../../tool')))
-from taint_analysis import coretaint, summary_functions
-from taint_analysis.coretaint import TimeOutException
-from taint_analysis.utils import ordered_argument_regs, get_ord_arguments_call, get_arity, get_any_arguments_call
+from taint_check.taint_analysis import coretaint, summary_functions
+from taint_check.taint_analysis.coretaint import TimeOutException
+from taint_check.taint_analysis.utils import ordered_argument_regs, get_ord_arguments_call, get_arity, get_any_arguments_call
 
 
 angr.loggers.disable_root_logger()
