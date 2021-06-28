@@ -1,4 +1,3 @@
-*.core
-core
-*/
 .gdb_history
+
+.idea
