@@ -1,0 +1,7 @@
+sudo: required
+dist: trusty
+env:
+  - PY="e"
+  - PY="p"
+install: tests/travis-setup.sh
+script: source ~/.virtualenvs/angr/bin/activate && python -c 'import angr; print "angr imports!"'

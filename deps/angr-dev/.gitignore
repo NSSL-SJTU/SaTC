@@ -1,0 +1,4 @@
+*.core
+core
+*/
+.gdb_history
