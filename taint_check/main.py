@@ -118,7 +118,13 @@ def main_main():
 
 def taint_stain_analysis(binary, ghidra_analysis_result, output):
 
-    appe = binary.split('/')[-1] + "-" + ''.join(random.sample(string.ascii_letters + string.digits, 4))
+    analysis_type = ""
+    if "ref2sink_bof" in ghidra_analysis_result:
+        analysis_type = "ref2sink_bof"
+    elif "ref2sink_cmdi" in ghidra_analysis_result:
+        analysis_type = "ref2sink_cmdi"
+
+    appe = binary.split('/')[-1] + "-" + analysis_type + "-" + ''.join(random.sample(string.ascii_letters + string.digits, 4))
     if '-alter2' not in ghidra_analysis_result:
         conv_Ghidra_output.main(ghidra_analysis_result)
         ghidra_analysis_result = ghidra_analysis_result + '-alter2'
@@ -204,7 +210,7 @@ def taint_stain_analysis(binary, ghidra_analysis_result, output):
                     [hex(i) for i in set(getfindflag()[1])])
             else:
                 res = "0x%x 0x%x " % (taint_addr, start_addr) + "  not found"
-            with open('result-%s.txt' % appe, 'a') as f:
+            with open(result_file, 'a') as f:
                 f.write(res + '\n')
         except Exception as e:
             print e
