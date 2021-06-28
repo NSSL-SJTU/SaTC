@@ -1,4 +1,4 @@
 requests==2.24.0
 uPnPClient==0.0.8
-colorlog==5.0.21
+colorlog==5.0.1
 angr==7.7.9.21
