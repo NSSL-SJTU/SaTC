@@ -22,7 +22,7 @@ RUN npm install
 
 RUN su - satc -c "source /usr/share/virtualenvwrapper/virtualenvwrapper.sh && \ 
                 mkvirtualenv SaTC && \
-                pip install -r ~/SaTC/requirements.txt -i https://pypi.douban.com/simple && \
+                pip install -r ~/SaTC/requirements.txt && \
 		tar -xvf /home/satc/deps/angr-dev.tar.xz -C /home/satc/deps/ && \
                 /home/satc/deps/angr-dev/setup.sh && \
                 pip install pyelftools==0.24 && \
