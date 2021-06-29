@@ -15,6 +15,7 @@ RUN useradd -s /bin/bash -m satc
 
 COPY src /home/satc/SaTC/
 ADD --chown=satc:satc https://github.com/NSSL-SJTU/SaTC/raw/py2_env/deps/angr-dev.tar.xz /home/satc/deps/
+ADD --chown=satc:satc https://github.com/NSSL-SJTU/SaTC/raw/py2_env/deps/ghidra.tar.xz /home/satc/SaTC/src/
 
 WORKDIR /home/satc/SaTC/jsparse
 
