@@ -15,7 +15,7 @@ RUN useradd -s /bin/bash -m satc
 
 COPY src /home/satc/SaTC/
 ADD --chown=satc:satc https://github.com/NSSL-SJTU/SaTC/raw/py2_env/deps/angr-dev.tar.xz /home/satc/deps/
-ADD --chown=satc:satc https://github.com/NSSL-SJTU/SaTC/raw/py2_env/deps/ghidra.tar.xz /home/satc/SaTC/src/
+ADD --chown=satc:satc https://github.com/NSSL-SJTU/SaTC/raw/py2_env/deps/ghidra.tar.xz /home/satc/deps/
 
 WORKDIR /home/satc/SaTC/jsparse
 
@@ -24,9 +24,10 @@ RUN npm install
 RUN su - satc -c "source /usr/share/virtualenvwrapper/virtualenvwrapper.sh && \ 
                 mkvirtualenv SaTC && \
                 pip install -r ~/SaTC/requirements.txt && \
-		tar -xvf /home/satc/deps/angr-dev.tar.xz -C /home/satc/deps/ && \
+		        tar -xvf /home/satc/deps/angr-dev.tar.xz -C /home/satc/deps/ && \
                 /home/satc/deps/angr-dev/setup.sh && \
                 pip install pyelftools==0.24 && \
+                tar -xvf /home/satc/deps/ghidra.tar.xz -C /home/satc/SaTC/src/ && \
                 echo 'workon SaTC' >> /home/satc/.bashrc"
 
 ADD init.sh /home/satc/SaTC
