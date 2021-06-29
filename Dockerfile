@@ -13,7 +13,7 @@ RUN apt-get install -y nodejs openjdk-11-jdk
 
 RUN useradd -s /bin/bash -m satc
 
-COPY src /home/satc/SaTC/
+COPY --chown=satc:satc src /home/satc/SaTC/
 ADD --chown=satc:satc https://github.com/NSSL-SJTU/SaTC/raw/py2_env/deps/angr-dev.tar.xz /home/satc/deps/
 ADD --chown=satc:satc https://github.com/NSSL-SJTU/SaTC/raw/py2_env/deps/ghidra.tar.xz /home/satc/deps/
 
@@ -27,7 +27,7 @@ RUN su - satc -c "source /usr/share/virtualenvwrapper/virtualenvwrapper.sh && \
 		        tar -xvf /home/satc/deps/angr-dev.tar.xz -C /home/satc/deps/ && \
                 /home/satc/deps/angr-dev/setup.sh && \
                 pip install pyelftools==0.24 && \
-                tar -xvf /home/satc/deps/ghidra.tar.xz -C /home/satc/SaTC/src/ && \
+                tar -xvf /home/satc/deps/ghidra.tar.xz -C /home/satc/SaTC/ && \
                 echo 'workon SaTC' >> /home/satc/.bashrc"
 
 ADD init.sh /home/satc/SaTC
