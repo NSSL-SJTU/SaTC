@@ -14,7 +14,7 @@ RUN apt-get install -y nodejs openjdk-11-jdk
 RUN useradd -s /bin/bash -m satc
 
 COPY src /home/satc/SaTC/
-ADD deps/angr-dev.tar.xz /home/satc/deps/
+ADD --chown=satc:satc https://github.com/NSSL-SJTU/SaTC/raw/py2_env/deps/angr-dev.tar.xz /home/satc/deps/
 
 WORKDIR /home/satc/SaTC/jsparse
 
@@ -22,9 +22,12 @@ RUN npm install
 
 RUN su - satc -c "source /usr/share/virtualenvwrapper/virtualenvwrapper.sh && \ 
                 mkvirtualenv SaTC && \
-                pip install -r ~/SaTC/requirements.txt -i https://pypi.douban.com/simple && \ 
+                pip install -r ~/SaTC/requirements.txt -i https://pypi.douban.com/simple && \
+		tar -xvf /home/satc/deps/angr-dev.tar.xz -C /home/satc/deps/ && \
                 /home/satc/deps/angr-dev/setup.sh && \
                 pip install pyelftools==0.24 && \
                 echo 'workon SaTC' >> /home/satc/.bashrc"
 
-CMD nohup npm --prefix /home/satc/SaTC/jsparse run start & && su - satc
+ADD init.sh /home/satc/SaTC
+
+ENTRYPOINT /home/satc/SaTC/init.sh
