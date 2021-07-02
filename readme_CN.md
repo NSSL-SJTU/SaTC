@@ -65,10 +65,7 @@ optional arguments:
 
 #### Ghidra_Script介绍
 
-ref2sink_cmdi:
-ref2sink_bof:
-
-share2sink:
-ref2share:
+ref2sink_cmdi : 该脚本从给定的字符串的引用中找到命令注入类型sink函数的路径。
+ref2sink_bof : 改脚本从给定的字符串的引用中找到缓冲区溢出类型sink函数的路径。
 
 
