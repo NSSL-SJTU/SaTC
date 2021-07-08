@@ -14,8 +14,8 @@ RUN apt-get install -y nodejs openjdk-11-jdk
 RUN useradd -s /bin/bash -m satc
 
 COPY --chown=satc:satc src /home/satc/SaTC/
-ADD --chown=satc:satc https://github.com/NSSL-SJTU/SaTC/raw/py2_env/deps/angr-dev.tar.xz /home/satc/deps/
-ADD --chown=satc:satc https://github.com/NSSL-SJTU/SaTC/raw/py2_env/deps/ghidra.tar.xz /home/satc/deps/
+ADD --chown=satc:satc http://202.120.7.23:8888/deps/angr-dev.tar.xz /home/satc/deps/
+ADD --chown=satc:satc http://202.120.7.23:8888/deps/ghidra.tar.xz /home/satc/deps/
 
 WORKDIR /home/satc/SaTC/jsparse
 
