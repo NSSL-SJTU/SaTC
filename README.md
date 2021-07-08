@@ -43,4 +43,4 @@ Example：
 > time python tool/main.py test/R7000P-V1.3.0.8/httpd test/R7000P-V1.3.0.8/httpd_ref2sink_bof.result
 
 Description of Commands :
-[satc_TaintCheck/readme.md](satc_TaintCheck/readme.md)
+[satc_TaintCheck/README.md](satc_TaintCheck/README.md)
