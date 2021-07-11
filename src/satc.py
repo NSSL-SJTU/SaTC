@@ -54,11 +54,14 @@ def argsparse():
                         action="append",
                         help="ghidra script to run"
                         )
+    parser.add_argument("--ref2share_result", required=False, metavar="/root/path/ref2share_result",
+                        help="This input is this parameter is the result of ref2share")
+
     parser.add_argument("--save_ghidra_project", required=False, action="store_true",
                         help="whether to save the ghidra project")
 
     # 是否启用污点分析，默认不启用
-    parser.add_argument("--taint_check", required=True, action="store_true",
+    parser.add_argument("--taint_check", required=False, action="store_true", default=False,
                         help="Enable taint analysis")
 
     # 添加指定前几个为边界程序，与 --bin互斥
@@ -199,7 +202,7 @@ def ghidra_analysise(args, border_bin):
     ghidra_scripts = args.ghidra_script
 
     if "all" in ghidra_scripts:
-        ghidra_scripts = ["ref2share", "ref2sink_bof", "ref2sink_cmdi", "share2sink"]
+        ghidra_scripts = ["ref2share", "ref2sink_bof", "ref2sink_cmdi"]
 
     # keyword_file = os.path.join(front_result_output, "detail", "Clustering_result_v2.result")
 
@@ -211,6 +214,9 @@ def ghidra_analysise(args, border_bin):
 
     # loop ghidra_scripts
     for s in ghidra_scripts:
+        keyword_file = ""
+        if s == "share2sink" and args.ref2share_result:
+            keyword_file = args.ref2share_result
         exec_script = scripts.get(s, "")
         if exec_script == "":
             log.error("没有找到%s脚本", args.ghidra_script)
@@ -218,7 +224,8 @@ def ghidra_analysise(args, border_bin):
         random = uuid.uuid4().hex
 
         for binname, binpath in border_bin:
-            keyword_file = os.path.join(front_result_output, "simple", ".data", binname + ".result")
+            if not keyword_file:
+                keyword_file = os.path.join(front_result_output, "simple", ".data", binname + ".result")
             ghidra_rep = os.path.join(ghidra_project, binname + "_" + s) + ".rep"
 
             bin_ghidra_project = os.path.join(ghidra_result_output, binname)
@@ -256,9 +263,19 @@ def main():
     start_time = datetime.datetime.now()
     log.info("Start analysis time : {}".format(str(start_time)))
     args = argsparse()
+    if args.ghidra_script:
+        if "share2sink" in args.ghidra_script and not args.ref2share_result:
+            print("Please use --ref2share_result args input ref2share script result")
+            sys.exit(-1)
+
     bin_list = front_analysise(args)
     if args.ghidra_script:
-        ghidra_analysise(args, bin_list)
+        if ("share2sink" in args.ghidra_script and args.ref2share_result) or ("share2sink" not in args.ghidra_script):
+            ghidra_analysise(args, bin_list)
+        elif "share2sink" in args.ghidra_script and not args.ref2share_result:
+            print("Please use --ref2share_result args input ref2share script result")
+            sys.exit(-1)
+
 
     if args.ghidra_script and args.taint_check:
         # 启用污点分析
