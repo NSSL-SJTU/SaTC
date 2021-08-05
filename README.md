@@ -75,7 +75,8 @@ Arguments:
 - `share2sink` : This script is corresponding to `ref2share`, such as `nvram_get`, `getenv` or other functions. Need to be used in conjunction with `ref2share`, and the input of this script is the output from the `ref2share` script.
 
 #### Output 
-Output directory structure：
+Directory structure：
+
 ```shell
 |-- ghidra_extract_result
 |   |-- httpd
