@@ -146,3 +146,8 @@ You should download dataset from.
 3.To discover command injection bugs in multi-bin of D-Link 878, setting input data in `prog.cgi` and sink functions in `rc` 
 > python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2share -b prog.cgi
 > python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=share2sink --ref2share_result=/home/satc/res/ghidra_extract_result/prog.cgi/prog.cgi_ref2share.result -b rc --taint_check
+
+
+#### Date set
+
+[SaTC_dateset.zip](https://drive.google.com/file/d/1rOhjBlmv3jYmkKhTBJcqJ-G56HoHBpVX/view?usp=sharing)
