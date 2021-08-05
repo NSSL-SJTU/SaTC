@@ -136,17 +136,18 @@ share2sink: 此脚本与`ref2share`功能类似。需要与`ref2share`来配合�
 ```
 
 #### 使用案例
-1.分析D-Link 878中命令注入、缓冲区溢出类型的漏洞
+
+- 分析D-Link 878中命令注入、缓冲区溢出类型的漏洞
 ```shell script
 python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2sink_cmdi --ghidra_script=ref2sink_bof --taint_check
 ```
 
-2.分析D-Link 878中`prog.cgi`命令注入类型的漏洞
+- 分析D-Link 878中`prog.cgi`命令注入类型的漏洞
 ```shell script
 python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2sink_cmdi -b prog.cgi --taint_check
 ```
 
-3.分析D-Link 878中`rc`的命令注入类型漏洞；在这个案例中`prog.cgi`中使用nvram_set设置变量，`rc`中使用nvram_get提取
+- 分析D-Link 878中`rc`的命令注入类型漏洞；在这个案例中`prog.cgi`中使用nvram_set设置变量，`rc`中使用nvram_get提取
 ```shell script
 python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2share -b prog.cgi
 
