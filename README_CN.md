@@ -144,6 +144,7 @@ share2sink: 此脚本与`ref2share`功能类似。需要与`ref2share`来配合�
 
 3.分析D-Link 878中`rc`的命令注入类型漏洞；在这个案例中`prog.cgi`中使用nvram_set设置变量，`rc`中使用nvram_get提取
 > python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2share -b prog.cgi
+>
 > python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=share2sink --ref2share_result=/home/satc/res/ghidra_extract_result/prog.cgi/prog.cgi_ref2share.result -b rc --taint_check
 
 #### 数据集合
