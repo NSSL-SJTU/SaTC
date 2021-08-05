@@ -22,7 +22,7 @@ This project includes two modules:
 
 ### Running Environment
 
-我们提供了可用的Docker环境和可用于构建Docker镜像的Dockerfile
+We provide a usable Docker environment and a Dockerfile that can be used to build Docker images
 
 #### Use Dockerfile build
 
