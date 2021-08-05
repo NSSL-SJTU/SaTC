@@ -1,14 +1,14 @@
 # SaTC
-A prototype of Shared-keywords aware Taint Checking, a novel static analysis approach that tracks the data flow of the user input between front-end and back-end to precisely detect security vulnerabilities. 
+A prototype of Shared-keywords aware Taint Checking(SaTC), a static analysis method that tracks user input between front-end and back-end for vulnerability discovery effectively and efficiently. 
 
-[Chinese](README_CN.md)
+[Chinese version](README_CN.md)
 ## Overview of SaTC
 
 <img src="SaTC-arch.png" width="60%">
 
 ## Research paper
 
-We present our approach and the findings of this work in the following research paper:
+We present our approach in the following research paper:
 
 **Sharing More and Checking Less: Leveraging Common Input Keywords to Detect Bugs in Embedded Systems** 
 [[PDF]](https://www.usenix.org/system/files/sec21fall-chen-libo.pdf)  
@@ -16,7 +16,7 @@ We present our approach and the findings of this work in the following research 
 
 ## Running Environment
 
-We provide a usable Docker environment and a Dockerfile that can be used to build Docker images
+We provide a usable Docker environment and a Dockerfile that can be used to build Docker images.
 
 ### Use Dockerfile build
 
