@@ -1,5 +1,5 @@
 # SaTC
-[Chinese version](README_CN.md)
+[Chinese Version.](README_CN.md)
 
 A prototype of Shared-keywords aware Taint Checking(SaTC), a static analysis method that tracks user input between front-end and back-end for vulnerability discovery effectively and efficiently. 
 
