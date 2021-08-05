@@ -13,18 +13,12 @@ We present our approach and the findings of this work in the following research 
 **Sharing More and Checking Less: Leveraging Common Input Keywords to Detect Bugs in Embedded Systems** 
 [[PDF]](https://www.usenix.org/system/files/sec21fall-chen-libo.pdf)  
 
-## Repository Structure
 
-This project includes two modules:
-
-- satc_front: Front-end hanlder module
-- satc_TaintCheck: Taint Engine 
-
-### Running Environment
+## Running Environment
 
 We provide a usable Docker environment and a Dockerfile that can be used to build Docker images
 
-#### Use Dockerfile build
+### Use Dockerfile build
 
 ```shell script
 # Cd SaTC code directory
@@ -37,7 +31,7 @@ docker build . -t satc
 docker run -v <mapping>:<mapping> -it satc
 ```
 
-#### Use the compiled docker environment
+### Use the compiled docker environment
 
 ```shell script
 # Get image from Docker hub 
@@ -47,7 +41,7 @@ docker pull smile0304/satc
 docker run -v <mapping>:<mapping> -it smile0304/satc
 ```
 
-### Instructions
+## Instructions
 
 ```text
 usage: satc.py [-h] -d /root/path/_ac18.extracted -o /root/output
@@ -74,14 +68,14 @@ optional arguments:
   -l 3, --len 3         (Option) According to the analysis results, analyze the top N programs that may be the boundary [the default is 3]
 ```
 
-##### Ghidra script
+#### Ghidra script
 
 - `ref2sink_cmdi`: The script finds the path of the command injection type sink function from the reference of the given string.
 - `ref2sink_bof` : The script finds the path of the buffer overflow type sink function from the reference of the given string.
 - `ref2share` : This script is used to find parameters such as shared functions written in strings such as input, for example: `nvram_set`, `setenv` and other functions. Need to be used in conjunction with share2sink
 - `share2sink` : This script is similar to the function of `ref2share`, except that the beginning is to read shared functions, such as: `nvram_get`, `getenv` and other functions. Need to be used in conjunction with `ref2share`; the input of using this script is the output of the `ref2share` script
 
-##### Output 
+#### Output 
 
 Output directory structure：
 ```shell
@@ -143,7 +137,7 @@ Other:
 |-- result-httpd-ref2sink_cmdi-ctW8.txt # taint analysis results, enable the `--taint-check` and `--ghidra_script` options to generate the file
 ```
 
-##### Example
+#### Example
 
 1. Analyze the vulnerabilities of command injection and buffer overflow in D-Link 878
 > python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2sink_cmdi --ghidra_script=ref2sink_bof --taint_check
