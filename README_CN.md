@@ -39,7 +39,7 @@ docker run -it smile0304/satc:V1.0
 ### 使用方法
 
 
-```python
+```text
 usage: satc.py [-h] -d /root/path/_ac18.extracted -o /root/output
                [--ghidra_script {ref2sink_cmdi,ref2sink_bof,share2sink,ref2share,all}]
                [--save_ghidra_project] --taint_check
@@ -54,18 +54,29 @@ optional arguments:
   -o /root/output, --output /root/output
                         指定结果输出位置
   --ghidra_script {ref2sink_cmdi,ref2sink_bof,share2sink,ref2share,all}
-                        (可选)指定要运行的ghidra分析脚本, all为运行`ref2sink_cmdi`,`ref2sink_bof`,`ref2share`三个脚本
-  --ref2share_result /root/path/ref2share_result  (当要运行share2sink分析脚本时默许指定这个参数)
-  --save_ghidra_project (可选)是否保存程序运行时产生的ghidra工程路径[默认不保存]
-  --taint_check         (可选)指定是否启用污点分析[默认不启用]
+                        (可选) 指定要使用的 Ghidra 脚本。 如果使用`all`命令，`ref2sink_cmdi`、`ref2sink_bof`和`ref2share`三个脚本将同时运行
+  --ref2share_result /root/path/ref2share_result  (可选) 运行`share2sink` Ghidra脚本时，需要使用该参数指定`ref2share`脚本的输出结果
+  --save_ghidra_project (可选) 是否保存程序运行时产生的ghidra工程路径
+  --taint_check         (可选) 指定是否启用污点分析
   -b /var/ac18/bin/httpd, --bin /var/ac18/bin/httpd
-                        (可选)指定要分析的二进制程序路径
-  -l 3, --len 3         (可选)指定根据聚合结果分析可能为边界程序的前N个程序，默认为3
+                        (可选) 用于指定需要分析的程序，如果不指定，SaTC将使用内置算法确认需要分析的程序
+  -l 3, --len 3         (可选) 根据分析结果分析可能为边界的前N个程序，默认为3
 ```
 
-### 输出结果说明
+#### Ghidra Script介绍
 
-输出结果:
+ref2sink_cmdi : 该脚本从给定的字符串的引用中找到命令注入类型sink函数的路径。
+
+ref2sink_bof : 改脚本从给定的字符串的引用中找到缓冲区溢出类型sink函数的路径。
+
+ref2share: 此脚本用来查找输入等字符串中被写入共享函数等参数，例如:`nvram_set`, `setenv`等函数。需要与share2sink来配合使用
+
+share2sink: 此脚本与`ref2share`功能类似，只是开头是读取共享函数，例如:`nvram_get`, `getenv`等函数。需要与`ref2share`来配合使用；使用此脚本的输入为`ref2share`脚本的输出
+
+
+#### 输出
+
+输出结果目录结构:
 ```shell
 |-- ghidra_extract_result
 |   |-- httpd
@@ -92,8 +103,12 @@ optional arguments:
 |-- result-httpd-ref2sink_cmdi-ctW8.txt
 ```
 
+需要关注的输出结果目录:
+- 1. keyword_extract_result/detail/Clustering_result_v2.result : 前端关键字在bin中的匹配情况。为`Input Entry Recognition`模块的输入
+- 2. ghidra_extract_result/{bin}/* : ghidra脚本的分析结果。为`Input Sensitive Taint Analysise`模块的输入
+- 3. result-{bin}-{ghidra_script}-{random}.txt: 污点分析结果
 
-说明:
+其他文件说明:
 
 ```shell
 |-- ghidra_extract_result # ghidra寻找函数调用路径的分析结果, 启用`--ghidra_script`选项会输出该目录
@@ -120,17 +135,13 @@ optional arguments:
 |-- result-httpd-ref2sink_cmdi-ctW8.txt # 污点分析结果,启用`--taint-check` 和 `--ghidra_script`选项才会生成该文件
 ```
 
+#### 使用案例
+1. 分析D-Link 878中命令注入、缓冲区溢出类型的漏洞
+> python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2sink_cmdi --ghidra_script=ref2sink_bof --taint_check
 
-#### Ghidra_Script介绍
+2. 分析D-Link 878中`prog.cgi`命令注入类型的漏洞
+> python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2sink_cmdi -b prog.cgi --taint_check
 
-ref2sink_cmdi : 该脚本从给定的字符串的引用中找到命令注入类型sink函数的路径。
-
-ref2sink_bof : 改脚本从给定的字符串的引用中找到缓冲区溢出类型sink函数的路径。
-
-##### ref2share, share2sink：
-
-ref2share: 此脚本用来查找输入等字符串中被写入共享函数等参数，例如:`nvram_set`, `setenv`等函数设置在
-
-share2sink: 此脚本与`ref2share`功能类似，只是开头是读取共享函数，例如:`nvram_get`。使用此脚本等输入为`ref2share`脚本的输出
-
-
+3. 分析D-Link 878中`rc`的命令注入类型漏洞；在这个案例中`prog.cgi`中使用nvram_set设置变量，`rc`中使用nvram_get提取
+> python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2share -b prog.cgi
+> python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=share2sink --ref2share_result=/home/satc/res/ghidra_extract_result/prog.cgi/prog.cgi_ref2share.result -b rc --taint_check
