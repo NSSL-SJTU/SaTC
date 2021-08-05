@@ -105,9 +105,9 @@ Output directory structure：
 
 Need to follow the directory:
 
-- 1. keyword_extract_result/detail/Clustering_result_v2.result : The match of front-end keywords in bin. Input for the `Input Entry Recognition` module
-- 2. ghidra_extract_result/{bin}/* : Analysis result of ghidra script. Input for `Input Sensitive Taint Analysise` module
-- 3. result-{bin}-{ghidra_script}-{random}.txt: taint analysise result
+- keyword_extract_result/detail/Clustering_result_v2.result : The match of front-end keywords in bin. Input for the `Input Entry Recognition` module
+- ghidra_extract_result/{bin}/* : Analysis result of ghidra script. Input for `Input Sensitive Taint Analysise` module
+- result-{bin}-{ghidra_script}-{random}.txt: taint analysise result
 
 
 Other:
@@ -139,12 +139,12 @@ Other:
 
 #### Example
 
-1. Analyze the vulnerabilities of command injection and buffer overflow in D-Link 878
+1.Analyze the vulnerabilities of command injection and buffer overflow in D-Link 878
 > python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2sink_cmdi --ghidra_script=ref2sink_bof --taint_check
 
-2. Analyze the vulnerability of `prog.cgi` command injection type in D-Link 878
+2.Analyze the vulnerability of `prog.cgi` command injection type in D-Link 878
 > python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2sink_cmdi -b prog.cgi --taint_check
 
-3. Analyze the command injection type vulnerability of `rc` in D-Link 878; in this case, use nvram_set to set variables in `prog.cgi`, and use nvram_get to extract in `rc`
+3.Analyze the command injection type vulnerability of `rc` in D-Link 878; in this case, use nvram_set to set variables in `prog.cgi`, and use nvram_get to extract in `rc`
 > python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2share -b prog.cgi
 > python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=share2sink --ref2share_result=/home/satc/res/ghidra_extract_result/prog.cgi/prog.cgi_ref2share.result -b rc --taint_check

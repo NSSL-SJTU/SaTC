@@ -104,9 +104,9 @@ share2sink: 此脚本与`ref2share`功能类似，只是开头是读取共享函
 ```
 
 需要关注的输出结果目录:
-- 1. keyword_extract_result/detail/Clustering_result_v2.result : 前端关键字在bin中的匹配情况。为`Input Entry Recognition`模块的输入
-- 2. ghidra_extract_result/{bin}/* : ghidra脚本的分析结果。为`Input Sensitive Taint Analysise`模块的输入
-- 3. result-{bin}-{ghidra_script}-{random}.txt: 污点分析结果
+- 1.keyword_extract_result/detail/Clustering_result_v2.result : 前端关键字在bin中的匹配情况。为`Input Entry Recognition`模块的输入
+- 2.ghidra_extract_result/{bin}/* : ghidra脚本的分析结果。为`Input Sensitive Taint Analysise`模块的输入
+- 3.result-{bin}-{ghidra_script}-{random}.txt: 污点分析结果
 
 其他文件说明:
 
@@ -136,12 +136,12 @@ share2sink: 此脚本与`ref2share`功能类似，只是开头是读取共享函
 ```
 
 #### 使用案例
-1. 分析D-Link 878中命令注入、缓冲区溢出类型的漏洞
+1.分析D-Link 878中命令注入、缓冲区溢出类型的漏洞
 > python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2sink_cmdi --ghidra_script=ref2sink_bof --taint_check
 
-2. 分析D-Link 878中`prog.cgi`命令注入类型的漏洞
+2.分析D-Link 878中`prog.cgi`命令注入类型的漏洞
 > python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2sink_cmdi -b prog.cgi --taint_check
 
-3. 分析D-Link 878中`rc`的命令注入类型漏洞；在这个案例中`prog.cgi`中使用nvram_set设置变量，`rc`中使用nvram_get提取
+3.分析D-Link 878中`rc`的命令注入类型漏洞；在这个案例中`prog.cgi`中使用nvram_set设置变量，`rc`中使用nvram_get提取
 > python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2share -b prog.cgi
 > python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=share2sink --ref2share_result=/home/satc/res/ghidra_extract_result/prog.cgi/prog.cgi_ref2share.result -b rc --taint_check
