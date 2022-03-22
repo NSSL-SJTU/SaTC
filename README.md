@@ -137,17 +137,17 @@ You should download dataset from [SaTC_dateset.zip](https://drive.google.com/fil
 
 #### Case Study
 
-1.To discover command injection and buffer overflow bugs in D-Link 878
+1. To discover command injection and buffer overflow bugs in D-Link 878
 ```shell script
 python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2sink_cmdi --ghidra_script=ref2sink_bof --taint_check
 ```
 
-2.To discover command injection bugs in specific target `prog.cgi` of D-Link 878 
+2. To discover command injection bugs in specific target `prog.cgi` of D-Link 878 
 ```shell script
 python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2sink_cmdi -b prog.cgi --taint_check
 ```
 
-3.To discover command injection bugs in multi-bin of D-Link 878, setting input data in `prog.cgi` and sink functions in `rc` 
+3. To discover command injection bugs in multi-bin of D-Link 878, setting input data in `prog.cgi` and sink functions in `rc` 
 ```shell script
 python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2share -b prog.cgi
 
