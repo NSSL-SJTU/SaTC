@@ -153,3 +153,9 @@ python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2sha
 
 python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=share2sink --ref2share_result=/home/satc/res/ghidra_extract_result/prog.cgi/prog.cgi_ref2share.result -b rc --taint_check
 ```
+
+#### Real-world Vulnerabilities
+
+As shown below, SaTC detected 33 previously unknown bugs, and at the time of paper writing, 30 of them have been confirmed by their developers. 25 bugs are command injection vulnerabilities; two of them are buffer overflow bugs; the other six belong to incorrect access control which could result in privacy disclosure. 
+
+<img src="vuls.jpg" width="60%">
