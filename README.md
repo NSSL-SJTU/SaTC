@@ -158,4 +158,4 @@ python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=share2s
 
 As shown below, SaTC detected 33 previously unknown bugs, and at the time of paper writing, 30 of them have been confirmed by their developers. 25 bugs are command injection vulnerabilities; two of them are buffer overflow bugs; the other six belong to incorrect access control which could result in privacy disclosure. 
 
-<img src="vuls.jpg" width="60%">
+<img src="img/vuls.jpg" width="60%">
