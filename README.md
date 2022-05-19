@@ -151,7 +151,7 @@ python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2sin
 ```shell script
 python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=ref2share -b prog.cgi
 
-python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=share2sink --ref2share_result=/home/satc/res/ghidra_extract_result/prog.cgi/prog.cgi_ref2share.result -b rc --taint_check
+python satc.py -d /home/satc/dlink_878 -o /home/satc/res --ghidra_script=share2sink --ref2share_result=/home/satc/res/ghidra_extract_result/prog.cgi/prog.cgi_ref2share.result --ghidra_script=ref2sink_cmdi -b rc --taint_check
 ```
 
 #### Real-world Vulnerabilities
